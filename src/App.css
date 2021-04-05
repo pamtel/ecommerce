@@ -1,38 +1,203 @@
+:root {
+  --royal-blue: #2766cc;
+  --sandybrown: #f8de4b;
+  --indiared: #dd655e;
+  --darkgray: #a5a5a5;
+  --darkslategray: #3f3f3f;
+  --whitesmoke: #f0f0f0;
+}
+.bg-royal-blue{
+  background-color: var(--royal-blue) !important;
+}
+.border-royal-blue{
+  border: 1px solid var(--royal-blue) !important;
+}
+.color-royal-blue{
+  color: var(--royal-blue) !important;
+}
+.bg-sandybrown{
+ background-color: var(--sandybrown) !important;
+}
+.border-sandybrown{
+ border: 1px solid var(--sandybrown) !important;
+}
+.color-sandybrown{
+ color: var(--sandybrown) !important;
+}
+.bg-indiared{
+ background-color: var(--indiared) !important;
+}
+.border-indiared{
+ border: 1px solid var(--indiared) !important;
+}
+.color-indiared{
+ color: var(--indiared) !important;
+}
+.bg-darkgray{
+ background-color: var(--darkgray) !important;
+}
+.border-darkgray{
+ border: 3px solid var(--darkgray) !important;
+}
+.color-darkgray{
+ color: var(--darkgray) !important;
+}
+.bg-darkslategray{
+ background-color: var(--darkslategray) !important;
+}
+.border-darkslategray{
+ border: 1px solid var(--darkslategray) !important;
+}
+.color-darkslategray{
+ color: var(--darkslategray) !important;
+}
+.bg-whitesmoke{
+ background-color: var(--whitesmoke) !important;
+}
+.border-whitesmoke{
+ border: 1px solid var(--whitesmoke) !important;
+}
+.color-whitesmoke{
+ color: var(--whitesmoke) !important;
+}
 .App {
   text-align: center;
+  background-color: var(--royal-blue);
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.global-haeader {
+  background-color: var(--royal-blue);
+  width: 100%;
+  padding: 15px 0;
+  color: #fff;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.global-haeader p {
+  margin-bottom: 0;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.global-header .navLink .navLink-item{
+  color: var(--darkslategray)
+
 }
 
-.App-link {
-  color: #61dafb;
+.badge {
+  border: none;
+  background-color: var(--royal-blue);
+  font-size: 14px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.fontWeight {
+  font-weight: 700;
+}
+
+/* home root */
+.home-root {
+  margin-top: -1rem;
+}
+.category-sidebar, .main-items, .bag-sidebar  {
+  height: 700px;
+}
+
+.bag-sidebar p{
+  font-weight: 700;
+  font-size: 18px;
+  color: var(--darkslategray);
+}
+
+.bag-sidebar .icon {
+  color: var(--darkgray);
+}
+
+.bag-content {
+  line-height: 15px;
+  text-align: center;
+}
+.bag-content .heading {
+  font-size: 18px;
+  margin-bottom: 0;
+}
+.bag-content .text {
+  padding-top: 8px;
+  font-size: 14px;
+}
+
+/* header styles */
+.navList .icon {
+  width: 60px;
+  height: 60px;
+  color: var(--darkgray);
+  background-color: var(--whitesmoke);
+  padding: 10px;
+  border-radius: 50%;
+}
+.navList .inner-con {
+  margin-left: 20px;
+}
+.navList .title {
+  font-weight: 700;
+  font-size: 20px;
+  margin-bottom: 2px;
+  color: var(--darkslategray);
+}
+.navList .sub-title{
+  margin-bottom: 0;
+  color: var(--darkgray);
+}
+
+.navLink-item {
+  text-decoration: none;
+  color: var(--darkgray);
+  font-weight: 600;
+  font-size: 15px;
+}
+
+hr {
+  color: var(--darkslategray);
+  border-bottom: 0;
+}
+
+/* footer */
+.footer {
+  width: 100%;
+}
+
+.footer-section {
+  padding: 3rem 25rem; 
+  background-color: var(--royal-blue);
+}
+
+.main-footer {
+  padding-top: 2rem;
+  text-align: center;
+  color: var(--darkgray);
+}
+
+.main-footer .target {
+  font-weight: 700;
+  font-size: 18px;
+  color: var(--darkslategray);
+  line-height: 2px;
+}
+
+.chat-button {
+  background-color: green !important;
+}
+
+/* catergory */
+.categories {
+  cursor: pointer;
+  font-weight: 700;
+}
+.active {
+  border-right: 4px solid var(--royal-blue);
+  color: var(--royal-blue);  
+}
+.category {
+  color: var(--darkgray);
+}
+
+/* itemList */
+.image-info {
+  line-height: 15px;
 }

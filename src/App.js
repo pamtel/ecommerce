@@ -1,25 +1,41 @@
-import logo from './logo.svg';
 import './App.css';
+import 'swiper/swiper.scss';
+import 'swiper/components/navigation/navigation.scss';
+import 'swiper/components/pagination/pagination.scss';
+import 'swiper/components/scrollbar/scrollbar.scss';
+import { Switch, Route } from "react-router-dom";
+import BagRoot from './components/_pages/bag/BagRoot';
+import HomeRoot from './components/_pages/home/HomeRoot';
+import AccountRoot from './components/_pages/account/AccountRoot';
+import ItemDetails from './components/_pages/home/ItemDetails';
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+const App = () => {
+   return (
+     <>
+       
+        {/* Routing */}
+        <Switch>
+            <Route path='/' exact>
+                <HomeRoot />
+            </Route>
+
+            <Route path='/bag' exact>
+                <BagRoot />
+            </Route>
+
+            <Route path='/account' exact>
+                <AccountRoot />
+            </Route>
+
+            <Route path='/item-details/:ItemId' exact>
+                <ItemDetails/>
+            </Route>
+            
+          </Switch>
+     </>
+   )
 }
 
 export default App;
+
+
