@@ -3,7 +3,7 @@ import { itemData } from './itemData'
 import Button from '@material-ui/core/Button';
 import { makeStyles } from '@material-ui/core/styles'
 import AddSharpIcon from '@material-ui/icons/AddSharp';
-import { Link } from 'react-router-dom'
+import { Link } from 'react-router-dom';
 
 const useStyles = makeStyles((theme) => ({
     button: {
@@ -22,7 +22,7 @@ function ItemList() {
              <div>
                  {itemData.map((data, index) => {
                      return (
-                         <Link to={"/item-details/" + data.id}>
+                         <Link className="item-data" to={"/item-details/" + data.id}>
                         <div key={index} className="row pb-4">
                         <div className="col-md-10 d-flex align-items-center">
                             <div className="image pe-3">
@@ -30,11 +30,11 @@ function ItemList() {
                             </div>
                             <div className="image-info">
                                 <p className="color-darkslategray">{data.title}</p>
-                                <p className="color-darkgray">{data.price}</p>
+                                <p className="color-darkgray item-data">{data.price}</p>
                             </div>
                         </div>
     
-                        <div className="col-md-2 d-flex align-items-center">
+                        <div className="col-md-2 d-flex align-items-center ">
                         <Button 
                         variant="outlined" 
                         size="small" 
@@ -43,7 +43,6 @@ function ItemList() {
                         startIcon={<AddSharpIcon />}>
                             ADD
                         </Button>
-
                         </div>
                     </div>
                     </Link>

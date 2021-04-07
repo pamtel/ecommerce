@@ -138,6 +138,7 @@ const StepForm = () => {
             </Typography>
           </Box>
           <Stepper
+            // orientation="vertical"
             activeStep={activeStep}
             style={{ margin: "30px 0 15px" }}
             alternativeLabel

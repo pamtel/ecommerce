@@ -37,7 +37,7 @@
  background-color: var(--darkgray) !important;
 }
 .border-darkgray{
- border: 3px solid var(--darkgray) !important;
+ border: 2px solid var(--darkgray) !important;
 }
 .color-darkgray{
  color: var(--darkgray) !important;
@@ -89,6 +89,10 @@
 
 .fontWeight {
   font-weight: 700;
+}
+
+.round {
+  border-radius: 15px;
 }
 
 /* home root */
@@ -156,6 +160,9 @@ hr {
   color: var(--darkslategray);
   border-bottom: 0;
 }
+.outdated-price {
+  text-decoration: line-through;
+}
 
 /* footer */
 .footer {
@@ -198,6 +205,40 @@ hr {
 }
 
 /* itemList */
+.item-data {
+  text-decoration: none;
+}
 .image-info {
   line-height: 15px;
+}
+
+/* accountRoot */
+.all-orders {
+  padding-left: 4rem;
+  border-top-right-radius: 15px;
+  border-bottom-right-radius: 15px;
+}
+.phoneNunber {
+  font-size: 20px;
+  padding-top: 0;
+}
+.all-orders .show{
+  padding-left: -2rem  !important;
+  font-size: 20px;
+  font-weight: 700;
+  color: var(--darkslategray);
+}
+.grid-container {
+  margin-bottom: 15rem;
+  border-radius: 5rem;
+}
+.order, .price {
+  padding-top: 15px;
+  line-height: 10px;
+  font-size: 12px;
+  font-weight: 500;
+}
+.details {
+  border-top-left-radius: 15px;
+  border-bottom-left-radius: 15px;
 }
