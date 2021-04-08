@@ -53,7 +53,7 @@ function AccountRoot() {
                     </div>
 
                     <div className="row gap-2 mt-3 grid-container">
-                        <div className="col-md-5 border rounded-rounded-3 p-3">
+                        <div className="col-md-5 border rounded p-3">
                             <div className="d-flex align-items-center">
                                 <img src={order1} alt="orders"/>
                                 <p className="ps-2 mt-3 fontWeight color-darkslategray">Target</p>
@@ -73,7 +73,7 @@ function AccountRoot() {
                             <img src={snipped} alt="snipped" className="ps-0 pt-2"/>
                         </div>
 
-                        <div className="col-md-5 border p-3">
+                        <div className="col-md-5 border rounded p-3">
                             <div className="d-flex align-items-center">
                                 <img src={order2} alt="orders"/>
                                 <p className="ps-2 mt-3 fontWeight color-darkslategray">Abhi's Juke Store</p>

@@ -39,23 +39,23 @@ function AccountAddress() {
                    
                 </div>
 
-                <div className="col-md-9 border py-4 all-orders">
+                <div className="col-md-9 border rounded py-4 all-orders">
                     <div className="row gap-4 mt-3 grid-container">
-                        <div className="col-md-4 border p-3">
-                            <div>
-                                <p>Shery Karan</p>
-                                <p>Quench Ville, Plot 12 Nkrumah Rd Kampala, Uganda</p>
-                                <p>+256 76 633 4574</p>
+                        <div className="col-md-4 border rounded p-3">
+                            <div className=" color-darkgray">
+                                <p className="mb-0 color-darkslategray">Shery Karan</p>
+                                <sup className="pt-3">Quench Ville, Plot 12 Nkrumah Rd Kampala, Uganda</sup>
+                                <p className="color-darkslategray">+256 76 633 4574</p>
                                 <div className="d-flex ">
-                                    <p className="pe-5">Edit</p>
-                                    <p className="">Delete</p>
+                                    <p className="pe-5 color-darkslategray">Edit</p>
+                                    <p className="color-indiared">Delete</p>
                                 </div>
                             </div>
                         </div>
 
-                        <div className="col-md-4 border p-3">
-                            <div className="d-flex justify-content-center">
-                                <AddIcon />
+                        <div className="col-md-4 border rounded py-3">
+                            <div className="d-flex justify-content-center mt-5 color-royal-blue">
+                                <AddIcon  className="me-2"/>
                                 <p>Add New Address</p>
                             </div>
                         </div>

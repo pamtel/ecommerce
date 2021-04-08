@@ -1,5 +1,4 @@
 import React from 'react'
-import HeaderLayout from '../../_layout/HeaderLayout';
 import { makeStyles } from '@material-ui/core/styles';
 import Stepper from '@material-ui/core/Stepper';
 import Step from '@material-ui/core/Step';
@@ -28,7 +27,7 @@ const useStyles = makeStyles((theme) => ({
   
   const steps = [
     {
-      label: 'Select campaign settings',
+      label: `Select campaign settings`,
       description: `For each ad campaign that you create, you can control how much
                 you're willing to spend on clicks and conversions, which networks
                 and geographical locations you want your ads to show on, and more.`,

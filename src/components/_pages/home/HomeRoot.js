@@ -1,7 +1,6 @@
 import React from 'react'
 import Categories from '../../Categories'
 import ItemList from '../../ItemList'
-import SliderOne from '../../SliderOne'
 import BagSideBar from '../bag/BagSideBar'
 import MainLayout from '../../_layout/MainLayout'
 
