@@ -59,9 +59,9 @@ function Utilities() {
 
   return (
     <div className="App">
-      <Button endIcon={<LoginIcon />} color="primary" variant="contained">
+      {/* <Button endIcon={<LoginIcon />} color="primary" variant="contained">
         Login
-    </Button>
+    </Button> */}
 
     <Button variant="outlined" color="primary" onClick={handleClickOpen}>
         Open alert dialog

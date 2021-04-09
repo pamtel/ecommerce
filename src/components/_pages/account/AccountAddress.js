@@ -3,8 +3,8 @@ import Button from '@material-ui/core/Button';
 import SpeakerNotesOutlinedIcon from '@material-ui/icons/SpeakerNotesOutlined';
 import AddLocationOutlinedIcon from '@material-ui/icons/AddLocationOutlined';
 import HeaderLayout from '../../_layout/HeaderLayout';
-import AddIcon from '@material-ui/icons/Add';
 import { Link } from 'react-router-dom';
+import AddAddress from '../../AddAddress';
 
 function AccountAddress() {
     return (
@@ -54,9 +54,8 @@ function AccountAddress() {
                         </div>
 
                         <div className="col-md-4 border rounded py-3">
-                            <div className="d-flex justify-content-center mt-5 color-royal-blue">
-                                <AddIcon  className="me-2"/>
-                                <p>Add New Address</p>
+                            <div className="mt-5 color-royal-blue">
+                                <AddAddress />
                             </div>
                         </div>
                     </div>

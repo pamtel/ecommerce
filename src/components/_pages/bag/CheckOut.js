@@ -7,6 +7,7 @@ import StepContent from '@material-ui/core/StepContent';
 import Button from '@material-ui/core/Button';
 import Paper from '@material-ui/core/Paper';
 import Typography from '@material-ui/core/Typography';
+import AddAddress from '../../AddAddress';
 
 
 const useStyles = makeStyles((theme) => ({
@@ -27,22 +28,20 @@ const useStyles = makeStyles((theme) => ({
   
   const steps = [
     {
-      label: `Select campaign settings`,
-      description: `For each ad campaign that you create, you can control how much
-                you're willing to spend on clicks and conversions, which networks
-                and geographical locations you want your ads to show on, and more.`,
+      id: 1,
+      label: `Account`,
+      description: `To place your order, log in by entering your 10 digit mobile number. `,
     },
     {
-      label: 'Create an ad group',
+      id: 2,
+      label: 'Delivery address',
       description:
-        'An ad group contains one or more ads which target a shared set of keywords.',
+        'Select your delivery address from the existing one and add new one.',
     },
     {
-      label: 'Create an ad',
-      description: `Try out different ad text to see what brings in the most customers,
-                and learn how to enhance your ads using features like ad extensions.
-                If you run into any problems with your ads, find out how to tell if
-                they're running and how to resolve approval issues.`,
+      id: 3,
+      label: 'Payment',
+      description: `Select your payment method`,
     },
   ];
   
@@ -75,10 +74,34 @@ function CheckOut() {
                 ) : null
               }
             >
-              {step.label}
+              <Typography variant="h6">{step.label}</Typography>
             </StepLabel>
             <StepContent>
               <Typography>{step.description}</Typography>
+              {step.id === 1 && (
+                <form className="form mt-3">
+                  <span className="mb-2">Mobile Number</span><br></br>
+                  <input type="text" placeholder="+256    Enter mobile number" className="input py-2"/>
+                  {/* <input type="button" value="Login" className=""/> */}
+                </form>
+              )}
+              {step.id === 2 && (
+                <div className="row gap-4 mt-3 ms-1">
+                <div className="col-md-5 border rounded py-2">
+                    <div className=" color-darkgray">
+                        <p className=" color-darkslategray">Shery Karan</p>
+                        <sup className="pt-2">Quench Ville, Plot 12 Nkrumah Rd Kampala, Uganda</sup><br/>
+                        <span className="color-darkslategray">+256 76 633 4574</span>
+                    </div>
+                </div>
+
+                <div className="col-md-5 border rounded py-4">
+                    <div className="d-flex justify-content-center mt-4 color-royal-blue">
+                        <AddAddress />
+                    </div>
+                </div>
+            </div>
+              )}
               <div className={classes.actionsContainer}>
                 <div>
                   <Button

@@ -15,20 +15,20 @@ function BagRoot() {
                 <AngrySmiley />
             </div> */}
 
-            {/* <div className="container mt-0 Bag-root">
+            <div className="container mt-0 Bag-root">
                 <div className="row">
-                    <div className="col-md-8 border-end">
+                    <div className="col-md-8 border-end fontWeight">
                         <CheckOut />
                     </div>
                     <div className="col-md-4 ps-4">
                         <BagPayment />
                     </div>
                 </div>
-            </div> */}
-
-            <div>
-                <OrderConfirmed />
             </div>
+
+            {/* <div>
+                <OrderConfirmed />
+            </div> */}
             </HeaderLayout>
         </>
     )

@@ -48,9 +48,9 @@ function ItemDetails() {
                 </div>
 
                 <div className="border-skyblue rounded pb-0 pt-0 counter item-details">
-                        <span onClick={decreaseDigit} className="px-2 color-skyblue bg-lavender fontWeight">-</span>
-                        <span  className="px-2 fontWeight">{digit}</span>
-                        <span onClick={increaseDigit} className="px-2 color-skyblue bg-lavender fontWeight">+</span>
+                        <span onClick={decreaseDigit} className="px-2 py-1 color-skyblue bg-lavender fontWeight">-</span>
+                        <span  className="px-2 py-1 fontWeight">{digit}</span>
+                        <span onClick={increaseDigit} className="px-2 py-1 color-skyblue bg-lavender fontWeight">+</span>
                     </div>
 
                 <div className="d-flex">

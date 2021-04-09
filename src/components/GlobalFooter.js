@@ -1,20 +1,12 @@
 import React from 'react'
 import Button from '@material-ui/core/Button';
-import { makeStyles } from '@material-ui/core/styles';
 import DeleteIcon from '@material-ui/icons/Delete';
 import footer1 from '../assests/img/footer1.png';
 import footer2 from '../assests/img/footer2.png';
 import footer3 from '../assests/img/footer3.png';
 
 
-const useStyles = makeStyles((theme) => ({
-    button: {
-      margin: theme.spacing(1),
-    },
-  }));
-
 function GlobalFooter() {
-    const classes = useStyles();
     return (
         <div className="footer">
             <div className="footer-section text-white">
@@ -48,10 +40,10 @@ function GlobalFooter() {
                 </div>
             </footer>
 
-            <div className="d-flex justify-content-center pb-3">
+            <div className="d-flex justify-content-center mb-4">
                 <Button
                     variant="contained"
-                    className="chat-button text-white"
+                    className="chat-button text-white px-4 py-2"
                     startIcon={<DeleteIcon />}
                 >
                     Chat with us

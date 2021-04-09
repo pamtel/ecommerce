@@ -309,3 +309,18 @@ hr {
 .info {
   font-size: 13px;
 }
+
+/* checkout */
+form input {
+  width: 20rem;
+  margin-top: 5px;
+  border: 1px solid var(--darkgray);
+  padding-left: 10px;
+  outline: none;
+  border-radius: 5px;
+}
+
+/* add-address */
+.add-address {
+  cursor: pointer;
+}

@@ -20,51 +20,69 @@ const SliderOne = () => {
         spaceBetween={10}
       slidesPerView={7}
       navigation
-      pagination={{ clickable: true }}
+//       pagination={{ clickable: true }}
       // scrollbar={{ draggable: true }}
       onSwiper={(swiper) => console.log(swiper)}
       onSlideChange={() => console.log('slide change')}
       >
         <SwiperSlide>
                 <img className=""  src={product1} alt="product"/>
-                {/* <p >Holiday Print</p>
-                <p className="line-height">Flannel Sheet Set..</p> */}
+                <span >Holiday Print</span><br></br>
+                <span className="line-height">Flannel Sheet Set..</span>
         </SwiperSlide>
 
         <SwiperSlide>
                 <img className=""  src={product2} alt="product"/>
+                <span >Norbury</span><br></br>
+                <span className="line-height">Scandinavian</span>
         </SwiperSlide>
 
         <SwiperSlide>
               <img className=""  src={product5} alt="product"/>
+                <span >50" x 70" Jersey</span><br></br>
+                <span className="line-height">Weighted Throw...</span>
         </SwiperSlide>
 
         <SwiperSlide>
-          <img className=""  src={product3} alt="product"/>
+                <img className=""  src={product3} alt="product"/>
+                <span >Flannel</span><br></br>
+                <span className="line-height">Herringbone..</span>
           </SwiperSlide>
 
           <SwiperSlide>
-          <img className=""  src={product6} alt="product"/>
+                <img className=""  src={product6} alt="product"/>
+                <span >Heavyweight</span><br></br>
+                <span className="line-height">blend Quilt..</span>
           </SwiperSlide>
 
           <SwiperSlide>
                 <img className=""  src={product4} alt="product"/>
+                <span >Holiday Print</span><br></br>
+                <span className="line-height">Flannel Sheet Set..</span>
         </SwiperSlide>
 
         <SwiperSlide>
                 <img className=""  src={product7} alt="product"/>
+                <span >Norbury</span><br></br>
+                <span className="line-height">Scandinavian</span>
         </SwiperSlide>
 
         <SwiperSlide>
-              <img className=""  src={product3} alt="product"/>
+                <img className=""  src={product3} alt="product"/>
+                <span >Heavyweight</span><br></br>
+                <span className="line-height">blend Quilt..</span>
         </SwiperSlide>
 
         <SwiperSlide>
-          <img className=""  src={product6} alt="product"/>
+                <img className=""  src={product6} alt="product"/>
+                <span >50" x 70" Jersey</span><br></br>
+                <span className="line-height">Weighted Throw...</span>
           </SwiperSlide>
 
           <SwiperSlide>
-          <img className=""  src={product7} alt="product"/>
+                 <img className=""  src={product7} alt="product"/>
+                <span>Flannel</span><br></br>
+                <span className="line-height">Herringbone..</span>
           </SwiperSlide>
         
       </Swiper>
