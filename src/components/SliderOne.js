@@ -1,13 +1,13 @@
 // import Swiper core and required modules
 import SwiperCore, { Navigation, Pagination, Scrollbar, A11y } from 'swiper';
 import { Swiper, SwiperSlide } from 'swiper/react';
-import product1 from '../assests/img/item6.png';
-import product2 from '../assests/img/item8.png';
-import product3 from '../assests/img/item7.png';
-import product4 from '../assests/img/item8.png';
+import product1 from '../assests/img/item6.jpg';
+import product2 from '../assests/img/item8.jpg';
+import product3 from '../assests/img/item7.jpg';
+import product4 from '../assests/img/item8.jpg';
 import product5 from '../assests/img/item9.png';
-import product6 from '../assests/img/item10.png'
-import product7 from '../assests/img/item11.png'
+import product6 from '../assests/img/item10.jpg';
+import product7 from '../assests/img/item11.jpg';
 
 
 // install Swiper modules

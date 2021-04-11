@@ -3,20 +3,21 @@ import Categories from '../../Categories'
 import ItemList from '../../ItemList'
 import BagSideBar from '../bag/BagSideBar'
 import MainLayout from '../../_layout/MainLayout'
+import Search from '../../Search'
 
 
 function HomeRoot() {
     return (
         <>
-        <MainLayout>
-        <hr/>
+        <MainLayout id="main-layout">
+        <hr className="d-md-block d-none"/>
         <div className="container home-root">
            <div className="row g-0">
                <aside className="category-sidebar col-md-3 border-end py-4">
                    <Categories />
                </aside>
 
-               <main className="main-items col-md-6 border-end p-4">
+               <main className="main-items col-md-6 border-end p-2 md-p-4">
                    <ItemList />
                </main>
 

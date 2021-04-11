@@ -8,6 +8,7 @@ import Button from '@material-ui/core/Button';
 import Paper from '@material-ui/core/Paper';
 import Typography from '@material-ui/core/Typography';
 import AddAddress from '../../AddAddress';
+import OTP1 from '../../OTP1';
 
 
 const useStyles = makeStyles((theme) => ({
@@ -81,8 +82,10 @@ function CheckOut() {
               {step.id === 1 && (
                 <form className="form mt-3">
                   <span className="mb-2">Mobile Number</span><br></br>
-                  <input type="text" placeholder="+256    Enter mobile number" className="input py-2"/>
-                  {/* <input type="button" value="Login" className=""/> */}
+                  <div className="d-flex align-items-center">
+                    <input type="text" placeholder="+256    Enter mobile number" className="input py-2"/>
+                    <OTP1 />
+                  </div>
                 </form>
               )}
               {step.id === 2 && (

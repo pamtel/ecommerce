@@ -1,0 +1,34 @@
+.searchForm {
+    transform: translateY(-3.5rem);
+  }
+  .searchForm input {
+    width: 28rem;
+    height: 3rem;
+    outline: none;
+    border-radius: 5px;
+    padding-left: 8px;
+    background-color: #f0f0f0;
+    border: none;
+  }
+  
+  .search-icon {
+    background-color: #f8de4b;
+    width: 3rem;
+    height: 3rem;
+    border-bottom-right-radius: 5px;
+    border-top-right-radius: 5px;
+    color: #2766cc;
+    margin-top: 5px;
+    margin-left: -2px;
+    cursor: pointer;
+  }
+  
+  @media(max-width: 767px) {
+    .searchForm {
+        transform: translateY(.2rem);
+      }
+    }
+    
+
+
+  

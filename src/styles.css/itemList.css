@@ -1,0 +1,24 @@
+/* itemList */
+.item-data {
+    text-decoration: none;
+  }
+  .image{
+    width: 100%;
+    text-align: center;
+    background-color: var(--lavender);
+  }
+  .image img {
+    width: 100%;
+    height: 10rem;
+    object-fit: contain;
+  
+  }
+  .image-info {
+    line-height: 15px;
+  }
+
+  /* item details */
+  .item-details {
+    width: 88px;
+    margin-bottom: 2rem;
+  }

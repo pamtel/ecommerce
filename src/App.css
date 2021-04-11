@@ -1,3 +1,7 @@
+@import './styles.css/search.css'; 
+@import './styles.css/footer.css'; 
+@import './styles.css/itemList.css'; 
+
 :root {
   --royal-blue: #2766cc;
   --sandybrown: #f8de4b;
@@ -132,9 +136,6 @@
 .home-root {
   margin-top: -1rem;
 }
-.category-sidebar, .main-items, .bag-sidebar  {
-  height: 700px;
-}
 
 .bag-sidebar p{
   font-weight: 700;
@@ -161,6 +162,10 @@
 
 .bag-payment {
   font-size: 20px;
+}
+
+.whatsapp-icon {
+  font-size: 30px;
 }
 
 /* header styles */
@@ -201,32 +206,6 @@ hr {
   text-decoration: line-through;
 }
 
-/* footer */
-.footer {
-  width: 100%;
-}
-
-.footer-section {
-  padding: 3rem 25rem; 
-  background-color: var(--royal-blue);
-}
-
-.main-footer {
-  padding-top: 2rem;
-  text-align: center;
-  color: var(--darkgray);
-}
-
-.main-footer .target {
-  font-weight: 700;
-  font-size: 18px;
-  color: var(--darkslategray);
-  line-height: 2px;
-}
-
-.chat-button {
-  background-color: green !important;
-}
 
 /* catergory */
 .categories {
@@ -241,13 +220,6 @@ hr {
   color: var(--darkgray);
 }
 
-/* itemList */
-.item-data {
-  text-decoration: none;
-}
-.image-info {
-  line-height: 15px;
-}
 
 /* accountRoot */
 .all-orders {
@@ -285,10 +257,7 @@ hr {
   margin-bottom: 20rem;
   color: var(--darkgray);
 }
-.item-details {
-  width: 88px;
-  margin-bottom: 2rem;
-}
+
 
 .subtotal {
   margin-bottom: 1rem;
@@ -323,4 +292,62 @@ form input {
 /* add-address */
 .add-address {
   cursor: pointer;
+}
+
+.dialog-content input, textarea {
+  width: 30rem;
+  height: 3rem;
+  outline: none;
+  border-radius: 5px;
+  padding-left: 8px;
+  margin-bottom: 1rem;
+  border: 2px solid var(--darkgray);
+}
+
+textarea {
+  height: 6rem;
+}
+
+
+.verify-content input {
+  width: 3rem;
+  height: 3rem;
+  border-radius: 5px;
+  outline: none;
+  border: none;
+  background-color: #f0f0f0;
+  padding-left: 5px;
+  margin-left: 2rem;
+  padding-left: 1.1rem;
+  font-size: 20px;
+}
+
+/* mobile view */
+@media(max-width: 767px) {
+.category-sidebar, .main-items {
+  border: none !important;
+}
+
+#desktop-category, #bag-sidebar, #deskstop-global-header, #desktop-itemlist {
+  display: none;
+   }
+
+   .category-sidebar, .bag-sidebar{
+    display: none;
+   }
+   .searchForm {
+    position: relative !important;
+    margin-top: 0px !important;
+  }
+  .searchForm input {
+    width: 20rem;
+    height: 3rem;
+    padding-left: 8px;
+  }
+}
+
+@media(min-width: 768px) {
+ #mobile-global-header, .mobile-itemlist{
+   display: none;
+ }
 }

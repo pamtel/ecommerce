@@ -3,7 +3,7 @@ import ChevronRightSharpIcon from '@material-ui/icons/ChevronRightSharp';
 
 function Categories() {
     return (
-        <div className="categories">
+        <div className="categories" id="desktop-category">
             <div className="d-flex active">
                 <p>Electronics</p>
                 <span className="ps-1"> (12)</span>

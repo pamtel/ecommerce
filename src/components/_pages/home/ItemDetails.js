@@ -3,7 +3,7 @@ import MainLayout from '../../_layout/MainLayout'
 import {  useParams } from 'react-router-dom'
 import {itemData} from '../../itemData'
 import ArrowBackIosIcon from '@material-ui/icons/ArrowBackIos';
-import chair from '../../../assests/img/chair.png'
+import chair from '../../../assests/img/item11.jpg'
 import Button from '@material-ui/core/Button';
 import SliderOne from '../../SliderOne';
 
@@ -31,7 +31,7 @@ function ItemDetails() {
             <p className="ps-4 fontWeight color-darkslategray bag-payment">Furniture</p>
         </div>
         <hr className="mt-0"/>
-        <div className="container d-flex pb-3">
+        <div className="container row d-sm-flex pb-3">
             <img src={chair} alt="product"/>
             <div className="pt-3 ps-4">
                 <div className="mb-4">
@@ -53,7 +53,7 @@ function ItemDetails() {
                         <span onClick={increaseDigit} className="px-2 py-1 color-skyblue bg-lavender fontWeight">+</span>
                     </div>
 
-                <div className="d-flex">
+                <div className="d-flex items-detail">
                     <Button variant="outlined" className="me-4 border-royal-blue border-3 px-5 py-2 color-royal-blue fontWeight">
                          Add to bag
                     </Button>

@@ -1,29 +1,29 @@
 import React from 'react'
 import Button from '@material-ui/core/Button';
-import DeleteIcon from '@material-ui/icons/Delete';
 import footer1 from '../assests/img/footer1.png';
 import footer2 from '../assests/img/footer2.png';
 import footer3 from '../assests/img/footer3.png';
-
+import ViewModuleIcon from '@material-ui/icons/ViewModule';
+import MobileFooter from './MobileFooter';
 
 function GlobalFooter() {
     return (
-        <div className="footer">
+        <div className="footer ">
             <div className="footer-section text-white">
                 <div className="d-flex justify-content-between align-items-center">
-                    <div>
+                    <div className="footer-info">
                         <div className="pb-2 d-flex justify-content-center">
                             <img src={footer1} alt="footer"/>
                         </div>
                         <p>Fast Delivery</p>
                     </div>
-                    <div>
+                    <div className="footer-info">
                         <div className="pb-2 d-flex justify-content-center">
                             <img src={footer2} alt="footer"/>
                         </div>
                         <p>Buyer Protection</p>
                     </div>
-                    <div>
+                    <div className="footer-info">
                         <div className="pb-2 d-flex justify-content-center">
                             <img src={footer3} alt="footer"/>
                         </div>
@@ -32,7 +32,7 @@ function GlobalFooter() {
                 </div>
             </div>
 
-            <footer className="main-footer d-flex justify-content-center">
+            <footer className="main-footer d-block d-lg-flex justify-content-lg-center" id="footer-desktop">
                 <div className="">
                     <p>STORE DETAILS</p>
                     <p className="target">Target</p>
@@ -40,15 +40,33 @@ function GlobalFooter() {
                 </div>
             </footer>
 
-            <div className="d-flex justify-content-center mb-4">
-                <Button
-                    variant="contained"
-                    className="chat-button text-white px-4 py-2"
-                    startIcon={<DeleteIcon />}
-                >
-                    Chat with us
-                </Button>
+            <div className="d-flex justify-content-between d-sm-block px-2">
+                <div className="d-flex justify-content-sm-center mb-4">
+                    <Button
+                        variant="contained"
+                        className="chat-button text-white px-4 py-2" 
+                    >
+                        <i className="fa fa-whatsapp whatsapp-icon pe-2"></i>
+                        Chat with us
+                    </Button>
+                </div>
+
+                <div className="d-flex justify-content-center mb-4 d-sm-none rounded-3">
+                    <Button
+                        variant="contained"
+                        className="bg-darkslategray text-white px-4 py-2 categories" 
+                        startIcon={<ViewModuleIcon className="footer-icon"/>}
+                    >
+                        
+                        Categories
+                    </Button>
+                </div>
             </div>
+
+            <div  className="d-sm-none">
+                <MobileFooter/>
+            </div>
+           
         </div>
     )
 }

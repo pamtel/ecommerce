@@ -1,5 +1,4 @@
-import React, { useState }  from 'react'
-import AddIcon from '@material-ui/icons/Add';
+import React, { useState } from 'react'
 import { makeStyles } from "@material-ui/core/styles";
 import Dialog from '@material-ui/core/Dialog';
 import DialogActions from '@material-ui/core/DialogActions';
@@ -40,7 +39,8 @@ const useStyles = makeStyles((theme) => ({
     }
   }));
 
-function AddAddress() {
+
+function OTP1() {
     const classes = useStyles();
   const [open, setOpen] = useState(false);
 
@@ -52,11 +52,11 @@ function AddAddress() {
     setOpen(false);
   };
     return (
-        <>
-        <div className="d-flex justify-content-center add-address" onClick={handleClickOpen}>
-            <AddIcon  className="me-2"/>
-            <p>Add New Address</p>
-        </div>
+        <div>
+            <Button variant="contained" className="ms-4  px-4 py-2 bg-sandybrown color-royal-blue" onClick={handleClickOpen}>
+                Login
+            </Button>
+
             <Dialog
             open={open}
             onClose={handleClose}
@@ -65,41 +65,30 @@ function AddAddress() {
           >
             <div className="d-flex justify-content-between mb-0">
               <DialogTitle id="alert-dialog-title">
-                <h5>{"Edit Address"}</h5> 
+                <h5>Verify your number</h5> 
               </DialogTitle>
               <Button onClick={handleClose}>
                 <CloseIcon/>
               </Button>
             </div>
             <hr className="mt-0"/>
-            <DialogContent className="dialog-content">
+            <DialogContent className="verify-content">
               <DialogContentText id="alert-dialog-description">
-                  <sup>Name</sup><br/>
-                  <input type="text" placeholder="e.g John Doe"/>
+                  <sup className="mx-5 mb-2 color-darkslategray fontWeight">Please enter verification code sent via SMS to +256 76 633 4574</sup><br/>
+                  <div className="d-flex mx-5">
+                  <input type="text" placeholder="0"/>
+                  <input type="text" placeholder="0"/>
+                  <input type="text" placeholder="0"/>
+                  <input type="text" placeholder="0"/>
+                  </div>
               </DialogContentText>
 
-              <DialogContentText id="alert-dialog-description">
-                  <sup>Mobile Number</sup><br/>
-                  <input type="text" placeholder="+256   Enter mobile number"/>
-              </DialogContentText>
-
-              <DialogContentText id="alert-dialog-description">
-                  <sup>City</sup><br/>
-                  <input type="text" placeholder="e.g Kampala"/>
-              </DialogContentText>
-
-              <DialogContentText id="alert-dialog-description">
-                  <sup>Address</sup><br/>
-                  <textarea type="text" placeholder="e.g Kalema Apartments, Plot 00 Johnson Rd, Room 24B"/>
-              </DialogContentText>
               </DialogContent>
             <DialogActions>
-              
-            <Button variant="contained">Add Address</Button>
             </DialogActions>
           </Dialog>
-          </>
+        </div>
     )
 }
 
-export default AddAddress
+export default OTP1
