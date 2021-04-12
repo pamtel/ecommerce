@@ -2,6 +2,7 @@ import React from 'react'
 import smiley from '../../../assests/img/smiley2.png'
 import Button from '@material-ui/core/Button';
 import { makeStyles } from '@material-ui/core/styles';
+import { Link } from 'react-router-dom'
 
 const useStyles = makeStyles((theme) => ({
     button: {
@@ -20,11 +21,14 @@ function AngrySmiley() {
             </div>
         </div>
         <div className="d-flex justify-content-center pb-5">
-                <Button
+            <Link to = "/" className="text-decoration-none">
+            <Button
                     variant="contained"
                     className="chat-button text-white bg-sandybrown">
                     Back to homepage
                 </Button>
+            </Link>
+                
             </div>
         </div>
     )

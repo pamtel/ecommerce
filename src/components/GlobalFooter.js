@@ -5,6 +5,7 @@ import footer2 from '../assests/img/footer2.png';
 import footer3 from '../assests/img/footer3.png';
 import ViewModuleIcon from '@material-ui/icons/ViewModule';
 import MobileFooter from './MobileFooter';
+import { Link } from 'react-router-dom'
 
 function GlobalFooter() {
     return (
@@ -32,7 +33,7 @@ function GlobalFooter() {
                 </div>
             </div>
 
-            <footer className="main-footer d-block d-lg-flex justify-content-lg-center" id="footer-desktop">
+            <footer className="main-footer d-lg-flex justify-content-lg-center" id="footer-desktop">
                 <div className="">
                     <p>STORE DETAILS</p>
                     <p className="target">Target</p>
@@ -40,7 +41,7 @@ function GlobalFooter() {
                 </div>
             </footer>
 
-            <div className="d-flex justify-content-between d-sm-block px-2">
+            <div className="d-flex justify-content-between d-sm-block px-2 second-footer">
                 <div className="d-flex justify-content-sm-center mb-4">
                     <Button
                         variant="contained"
@@ -51,7 +52,7 @@ function GlobalFooter() {
                     </Button>
                 </div>
 
-                <div className="d-flex justify-content-center mb-4 d-sm-none rounded-3">
+                <Link className="d-flex justify-content-center mb-4 d-sm-none rounded-3 text-decoration-none">
                     <Button
                         variant="contained"
                         className="bg-darkslategray text-white px-4 py-2 categories" 
@@ -60,7 +61,7 @@ function GlobalFooter() {
                         
                         Categories
                     </Button>
-                </div>
+                </Link>
             </div>
 
             <div  className="d-sm-none">

@@ -9,18 +9,22 @@ function MobileFooter() {
     return (
         <div className="mobile-footer">
             <hr/>
-            <div className="d-flex justify-content-between align-items-baseline px-3 py-2">
-                <Link to="/" className="text-text-decoration-none">
+            <div className="d-flex justify-content-between align-items-baseline px-3 text-center">
+                <Link to="/" className="text-decoration-none">
                     <HomeOutlinedIcon className="mobile-footer-icon"/>
+                    <p>Home</p>
                 </Link>
-                <Link className="text-text-decoration-none">
+                <Link to="/category" className="text-decoration-none">
                     <ViewModuleOutlinedIcon className="mobile-footer-icon"/>
+                    <p>Categories</p>
                 </Link>
-                <Link className="text-text-decoration-none">
+                <Link className="text-decoration-none">
                     <LocalMallOutlinedIcon className="mobile-footer-icon"/>
+                    <p>Bag</p>
                 </Link>
-                <Link className="text-text-decoration-none">
+                <Link to="/orders" className="text-decoration-none">
                     <AssignmentOutlinedIcon className="mobile-footer-icon"/>
+                    <p>Orders</p>
                 </Link>
             </div>
         </div>

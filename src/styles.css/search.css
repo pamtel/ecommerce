@@ -1,5 +1,5 @@
 .searchForm {
-    transform: translateY(-3.5rem);
+    transform: translateY(-2.5rem);
   }
   .searchForm input {
     width: 28rem;
@@ -26,6 +26,11 @@
   @media(max-width: 767px) {
     .searchForm {
         transform: translateY(.2rem);
+        margin-left: 5px;
+      }
+      .search-container {
+        margin: 1rem 0;
+        text-align: center;
       }
     }
     

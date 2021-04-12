@@ -11,9 +11,9 @@ function BagRoot() {
         <>
         <HeaderLayout>
         <hr className="mb-0"/>
-            {/* <div>
+            <div>
                 <AngrySmiley />
-            </div> */}
+            </div>
 
             <div className="container mt-0 Bag-root">
                 <div className="row">

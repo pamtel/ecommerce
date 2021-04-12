@@ -1,0 +1,22 @@
+.orderState {
+    background-color: #f0f0f0;
+    padding-top: 2rem; 
+    padding-bottom: 7rem;
+}
+.all-orders {
+    background-color: #fff;
+    padding-top: 1rem;
+    padding-left: 0px;
+    margin-bottom: 1rem;
+    border-radius: .5rem;
+}
+
+.all-orders h6 {
+    font-size: 20px;
+}
+
+.all-orders .status {
+    background-color: #f0f0f0;
+    padding: 5px 10px;
+    border-radius: 5px;
+}

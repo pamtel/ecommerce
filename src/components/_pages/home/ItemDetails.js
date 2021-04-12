@@ -6,6 +6,7 @@ import ArrowBackIosIcon from '@material-ui/icons/ArrowBackIos';
 import chair from '../../../assests/img/item11.jpg'
 import Button from '@material-ui/core/Button';
 import SliderOne from '../../SliderOne';
+import { Link } from 'react-router-dom'
 
 function ItemDetails() {
     const { ItemId } = useParams()
@@ -26,10 +27,10 @@ function ItemDetails() {
     console.log(singleItem);
     return (
         <MainLayout>
-        <div className="container d-flex">
-            <ArrowBackIosIcon/>
+        <Link to="/" className="container d-flex text-decoration-none">
+            <ArrowBackIosIcon className="color-darkslategray"/>
             <p className="ps-4 fontWeight color-darkslategray bag-payment">Furniture</p>
-        </div>
+        </Link>
         <hr className="mt-0"/>
         <div className="container row d-sm-flex pb-3">
             <img src={chair} alt="product"/>

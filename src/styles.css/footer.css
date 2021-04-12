@@ -4,7 +4,7 @@
   }
   
   .footer-section {
-    padding: 3rem 25rem; 
+    padding: 3rem 15rem; 
     background-color: var(--royal-blue);
   }
   
@@ -30,8 +30,10 @@
         padding: 2rem 2em; 
         text-align: center;
       }
+      .second-footer {
+        margin-bottom: 6rem;
+      }
       .footer-info p {
-          
           width: 5px;
       }
       .categories {
@@ -39,6 +41,12 @@
       }
       .footer-icon {
         font-size: 2rem !important;
+      }
+      .mobile-footer {
+        bottom: 0;
+        position: fixed;
+        width: 100%;
+        background-color: #fff;
       }
       .mobile-footer-icon {
           cursor: pointer;

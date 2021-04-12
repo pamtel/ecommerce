@@ -1,9 +1,8 @@
 import React from 'react'
-import Categories from '../../Categories'
+import Categories from '../categories/Categories'
 import ItemList from '../../ItemList'
 import BagSideBar from '../bag/BagSideBar'
 import MainLayout from '../../_layout/MainLayout'
-import Search from '../../Search'
 
 
 function HomeRoot() {
