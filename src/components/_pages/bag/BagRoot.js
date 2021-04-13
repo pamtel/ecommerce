@@ -4,6 +4,7 @@ import CheckOut from './CheckOut';
 import AngrySmiley from './AngrySmiley';
 import BagPayment from './BagPayment';
 import OrderConfirmed from './OrderConfirmed';
+import MobileFooter from '../../MobileFooter';
 
 function BagRoot() {
     // const classes = useStyles();
@@ -30,6 +31,7 @@ function BagRoot() {
                 <OrderConfirmed />
             </div> */}
             </HeaderLayout>
+            <MobileFooter />
         </>
     )
 }

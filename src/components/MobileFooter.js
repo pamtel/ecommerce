@@ -10,7 +10,7 @@ function MobileFooter() {
         <div className="mobile-footer">
             <hr/>
             <div className="d-flex justify-content-between align-items-baseline px-3 text-center">
-                <Link to="/" className="text-decoration-none">
+                <Link to="/" className="text-decoration-none mobile-active">
                     <HomeOutlinedIcon className="mobile-footer-icon"/>
                     <p>Home</p>
                 </Link>
@@ -18,7 +18,7 @@ function MobileFooter() {
                     <ViewModuleOutlinedIcon className="mobile-footer-icon"/>
                     <p>Categories</p>
                 </Link>
-                <Link className="text-decoration-none">
+                <Link to="/bag" className="text-decoration-none">
                     <LocalMallOutlinedIcon className="mobile-footer-icon"/>
                     <p>Bag</p>
                 </Link>

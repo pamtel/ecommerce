@@ -32,13 +32,15 @@ function ItemDetails() {
             <p className="ps-4 fontWeight color-darkslategray bag-payment">Furniture</p>
         </Link>
         <hr className="mt-0"/>
-        <div className="container row d-sm-flex pb-3">
-            <img src={chair} alt="product"/>
-            <div className="pt-3 ps-4">
-                <div className="mb-4">
-                    <h6 className="color-darkslategray fontWeight pb-2">Norbury Scandinavian Wood Leg Ottoman</h6>
-                    <sup className="fontWeight color-darkgray info">Sold as a peice, Wooden uphoistered ottoman lends  a laid-black appeal to your indoor space.<br></br> Comes with soft padding for extra comfort and support. Solid Wooden and metal free ensures durable, long-lasting use. Great as a footrest or extra seat when entertaining guests </sup>
-                </div>
+        <div className="container pb-3">
+            <div className="row">
+                <img src={chair} alt="product" className="col-sm-5"/>
+                <div className="pt-3 ps-4 col-sm-7">
+                    <div className="mb-4">
+                        <h6 className="color-darkslategray fontWeight pb-2">Norbury Scandinavian Wood Leg Ottoman</h6>
+                        <sup className="fontWeight color-darkgray info">Sold as a peice, Wooden uphoistered ottoman lends  a laid-black appeal to your indoor space.<br></br> Comes with soft padding for extra comfort and support. Solid Wooden and metal free ensures durable, long-lasting use. Great as a footrest or extra seat when entertaining guests </sup>
+                    </div>
+            
 
                 <div className="line-height mb-4 fontWeight">
                     <div className="d-flex align-items-center">
@@ -49,24 +51,25 @@ function ItemDetails() {
                 </div>
 
                 <div className="border-skyblue rounded pb-0 pt-0 counter item-details">
-                        <span onClick={decreaseDigit} className="px-2 py-1 color-skyblue bg-lavender fontWeight">-</span>
-                        <span  className="px-2 py-1 fontWeight">{digit}</span>
-                        <span onClick={increaseDigit} className="px-2 py-1 color-skyblue bg-lavender fontWeight">+</span>
+                        <span onClick={decreaseDigit} className="px-2 py-sm-1 color-skyblue bg-lavender fontWeight">-</span>
+                        <span  className="px-2 py-sm-1 fontWeight">{digit}</span>
+                        <span onClick={increaseDigit} className="px-2 py-sm-1 color-skyblue bg-lavender fontWeight">+</span>
                     </div>
-
-                <div className="d-flex items-detail">
-                    <Button variant="outlined" className="me-4 border-royal-blue border-3 px-5 py-2 color-royal-blue fontWeight">
+                    
+                <div className="d-flex justify-content-between justify-content-sm-start items-detail">
+                    <Button variant="outlined" className="me-4 border-royal-blue border-3 px-4 px-sm-5 py-2 color-royal-blue fontWeight">
                          Add to bag
                     </Button>
 
-                    <Button variant="contained" className="me-4 bg-sandybrown border-3 px-5 py-2 color-royal-blue fontWeight">
+                    <Button variant="contained" className="me-4 bg-sandybrown border-3 px-5  py-2 color-royal-blue fontWeight">
                         Buy Now
                     </Button>
+                </div>
                 </div>
             </div>
         </div>
 
-        <div className="container py-5">
+        <div className="container py-5 d-none d-sm-block">
             <h5 className="color-darkgray mb-3">RELATED PRODUCTS</h5>
             <SliderOne />
         </div>

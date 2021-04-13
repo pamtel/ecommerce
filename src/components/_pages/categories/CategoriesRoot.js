@@ -10,7 +10,7 @@ function CategoriesRoot() {
         <div>
             {/* <EmptyStore/> */}
             <AllCategories />
-            <SingleCategory />
+            {/* <SingleCategory />  */}
             
         </div>
     )

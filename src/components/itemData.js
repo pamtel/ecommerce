@@ -1,13 +1,13 @@
-import image1 from '../assests/img/item1.jpg';
-import image2 from '../assests/img/item2.jpg';
-import image4 from '../assests/img/item4.jpg';
-import image5 from '../assests/img/item6.jpg';
-import image3 from '../assests/img/item3.jpg';
-import image6 from '../assests/img/item5.jpg';
-import image7 from '../assests/img/item7.jpg';
-import image8 from '../assests/img/item8.jpg';
-import image9 from '../assests/img/item9.jpg';
-import image10 from '../assests/img/item10.jpg';
+import image1 from '../assests/img/Bag.jpg';
+import image2 from '../assests/img/category-dress1.jpg';
+import image4 from '../assests/img/category-dress3.jpg';
+import image5 from '../assests/img/Category-shoe2.jpg';
+import image3 from '../assests/img/category-watch1.jpg';
+import image6 from '../assests/img/category-bag1.jpg';
+import image7 from '../assests/img/category-shoe1.jpg';
+import image8 from '../assests/img/category-bag2.jpg';
+import image9 from '../assests/img/Gold-watch.jpg';
+import image10 from '../assests/img/category-watch2.jpg';
 
 
 export const itemData = [

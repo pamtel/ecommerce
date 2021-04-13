@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import React, { useState, useRef } from 'react'
 import ArrowBackIosIcon from '@material-ui/icons/ArrowBackIos';
 import { Link } from 'react-router-dom'
 import Search from '../../Search';
@@ -21,8 +21,8 @@ function SingleCategory() {
           setListView(!listView);
       }
 
-    const [open, setOpen] =useState(false);
-    const anchorRef = React.useRef(null);
+    const [open, setOpen] = useState(false);
+    const anchorRef = useRef(null);
     const handleToggle = () => {
         setOpen((prevOpen) => !prevOpen);
       };
@@ -102,7 +102,7 @@ function SingleCategory() {
                     </button>
                 </div>
 
-                { listView ? <ListView onSearch={onSearch} classes={classes} />  : !listView  ? <GridView onSearch={onSearch} classes={classes} /> : <p>Loading....</p> }
+                { listView ? <ListView  />  : !listView  ? <GridView /> : <p>Loading....</p> }
         </div>
         </div>
             

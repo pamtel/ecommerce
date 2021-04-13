@@ -14,55 +14,60 @@ import CheckOut from './components/_pages/bag/CheckOut';
 import CategoriesRoot from './components/_pages/categories/CategoriesRoot';
 import OrdersRoot from './components/_pages/Orders.js/OrdersRoot';
 import SingleCategory from './components/_pages/categories/SingleCategory';
+// import GlobalContext from "./components/GlobalContext"
+
+
 
 const App = () => {
    return (
-     <>
+   
+         <>
        
-        {/* Routing */}
-        <Switch>
-            <Route path='/' exact>
-                <HomeRoot />
-            </Route>
+       {/* Routing */}
+       <Switch>
+           <Route path='/' exact>
+               <HomeRoot />
+           </Route>
 
-            <Route path='/bag' exact>
-                <BagRoot />
-            </Route>
+           <Route path='/bag' exact>
+               <BagRoot />
+           </Route>
 
-            <Route path='/category' exact>
-                <CategoriesRoot />
-            </Route>
+           <Route path='/category' exact>
+               <CategoriesRoot />
+           </Route>
 
-            <Route path='/category/singleCategory' exact>
-                <SingleCategory />
-            </Route>
+           <Route path='/category/singleCategory' exact>
+               <SingleCategory />
+           </Route>
 
-            <Route path='/account' exact>
-                <AccountRoot />
-            </Route>
+           <Route path='/account' exact>
+               <AccountRoot />
+           </Route>
 
-            <Route path='/orders' exact>
-                <OrdersRoot />
-            </Route>
+           <Route path='/orders' exact>
+               <OrdersRoot />
+           </Route>
 
-            <Route path='/address'>
-                <AccountAddress/>
-            </Route>
+           <Route path='/address'>
+               <AccountAddress/>
+           </Route>
 
-            <Route path='/utilities'>
-                <Utilities />
-            </Route>
+           <Route path='/utilities'>
+               <Utilities />
+           </Route>
 
-            <Route path='/bag/checkout'>
-                <CheckOut />
-            </Route>
+           <Route path='/bag/checkout'>
+               <CheckOut />
+           </Route>
 
-            <Route path='/item-details/:ItemId' exact>
-                <ItemDetails/>
-            </Route>
-            
-          </Switch>
-     </>
+           <Route path='/item-details/:ItemId' exact>
+               <ItemDetails/>
+           </Route>
+           
+         </Switch>
+    </>
+   
    )
 }
 
