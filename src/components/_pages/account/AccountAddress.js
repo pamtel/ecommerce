@@ -26,7 +26,7 @@ function AccountAddress() {
 
           <div className="container border round my-4 py-4 pt-0 pb-0 account-root">
               <div className="row fontWeight ">
-                <div className="col-md-3 border py-4 details">
+                <div className="col-md-3 border-end py-4 details">
               
                     <div className="d-flex ps-3 color-darkgray">
                         <SpeakerNotesOutlinedIcon />
@@ -39,15 +39,15 @@ function AccountAddress() {
                    
                 </div>
 
-                <div className="col-md-9 border rounded py-4 all-orders">
+                <div className="col-md-9 rounded py-4 ps-5 all-orders">
                     <div className="row gap-4 mt-3 grid-container">
                         <div className="col-md-4 border rounded p-3">
                             <div className=" color-darkgray">
                                 <p className="mb-0 color-darkslategray">Shery Karan</p>
                                 <sup className="pt-3">Quench Ville, Plot 12 Nkrumah Rd Kampala, Uganda</sup>
                                 <p className="color-darkslategray">+256 76 633 4574</p>
-                                <div className="d-flex ">
-                                    <p className="pe-5 color-darkslategray">Edit</p>
+                                <div className="d-flex add-address">
+                                    <p className="pe-5 color-darkslategray ">Edit</p>
                                     <p className="color-indiared">Delete</p>
                                 </div>
                             </div>

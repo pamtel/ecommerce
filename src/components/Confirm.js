@@ -9,7 +9,7 @@ import Button from "@material-ui/core/Button";
 const Confirm = ({
   handleNext,
   handleBack,
-  values: { firstName, lastName, email, gender, date, phone, city }
+  values: { firstName, lastName, email, gender, date, phone, city },
 }) => {
   const handleSubmit = () => {
     console.log({ firstName, lastName, email, gender, date, phone, city });

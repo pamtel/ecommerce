@@ -15,7 +15,8 @@ export const itemData = [
         id: 1,
         image: image1,
         title: "Kids' 2pk Cloth Face Masks",
-        price: "UGX 185,000"
+        price: "UGX 185,000",
+        desc: "Sold as a peice, Wooden uphoistered ottoman lends  a laid-black appeal to your indoor space. Norbury Scandinavian Wood Leg Ottoman"
     },
     {
         id: 2,
@@ -23,30 +24,35 @@ export const itemData = [
         title: "Norbury Scandinavian Wood Ottoman",
         price: "UGX 118,400",
         outdated: "UGX 148,000",
+        desc: "Comes with soft padding for extra comfort and support. Solid Wooden and metal free ensures durable, long-lasting use. Great as a footrest or extra seat when entertaining guests"
     },
     {
         id: 3,
         image: image4,
         title: "Baby-Cut Carrots - 1Ib - Good & Gather",
-        price: "UGX 4,000"
+        price: "UGX 4,000",
+         desc: "Sold as a peice, Wooden uphoistered ottoman lends  a laid-black appeal to your indoor space. Norbury Scandinavian Wood Leg Ottoman"
     },
     {
         id: 4,
         image: image5,
         title: "Metal Counry Charm and Wood Bench Saracina Home",
-        price: "UGX 34,000"
+        price: "UGX 34,000",
+        desc: "Comes with soft padding for extra comfort and support. Solid Wooden and metal free ensures durable, long-lasting use. Great as a footrest or extra seat when entertaining guests"
     },
     {
         id: 5,
         image: image3,
         title: "Alternative Protein Ground - 16oz - Good & Gather",
-        price: "UGX 8,000"
+        price: "UGX 8,000",
+        desc: "Sold as a peice, Wooden uphoistered ottoman lends  a laid-black appeal to your indoor space. Norbury Scandinavian Wood Leg Ottoman"
     },
     {
         id: 6,
         image: image6,
         title: "Kids' 2pk Cloth Face Masks",
-        price: "UGX 185,000"
+        price: "UGX 185,000",
+        desc: "Comes with soft padding for extra comfort and support. Solid Wooden and metal free ensures durable, long-lasting use. Great as a footrest or extra seat when entertaining guests"
     },
     {
         id: 7,
@@ -54,23 +60,27 @@ export const itemData = [
         title: "Norbury Scandinavian Wood Ottoman",
         price: "UGX 118,400",
         outdated: "UGX 148,000",
+        desc: "Sold as a peice, Wooden uphoistered ottoman lends  a laid-black appeal to your indoor space. Norbury Scandinavian Wood Leg Ottoman"
     },
     {
         id: 8,
         image: image8,
         title: "Baby-Cut Carrots - 1Ib - Good & Gather",
-        price: "UGX 4,000"
+        price: "UGX 4,000",
+        desc: "Comes with soft padding for extra comfort and support. Solid Wooden and metal free ensures durable, long-lasting use. Great as a footrest or extra seat when entertaining guests"
     },
     {
         id: 9,
         image: image9,
         title: "Metal Counry Charm and Wood Bench Saracina Home",
-        price: "UGX 34,000"
+        price: "UGX 34,000",
+        desc: "Sold as a peice, Wooden uphoistered ottoman lends  a laid-black appeal to your indoor space. Norbury Scandinavian Wood Leg Ottoman"
     },
     {
         id: 10,
         image: image10,
         title: "Alternative Protein Ground - 16oz - Good & Gather",
-        price: "UGX 8,000"
+        price: "UGX 8,000",
+        desc: "Comes with soft padding for extra comfort and support. Solid Wooden and metal free ensures durable, long-lasting use. Great as a footrest or extra seat when entertaining guests"
     },
 ]

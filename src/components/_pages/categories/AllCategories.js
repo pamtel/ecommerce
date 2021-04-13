@@ -62,7 +62,7 @@ function AllCategories() {
             <Link to="/category/singleCategory" key={index} className="item-data col-6 col-lg-12">
            <div  className="row pb-4">
            <div className="col-lg-10 d-block d-lg-flex align-items-center">
-               <div className="all-images me-3 bg-dark text-center rounded-3">
+               <div className="me-3 text-center rounded-3">
                    <img src={data.image} alt="items" className="img-thumbnail"/>
                </div>
                <div className="image-info">

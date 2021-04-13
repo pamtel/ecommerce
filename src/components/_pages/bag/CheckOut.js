@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useState } from 'react'
 import { makeStyles } from '@material-ui/core/styles';
 import Stepper from '@material-ui/core/Stepper';
 import Step from '@material-ui/core/Step';
@@ -9,6 +9,7 @@ import Paper from '@material-ui/core/Paper';
 import Typography from '@material-ui/core/Typography';
 import AddAddress from '../../AddAddress';
 import OTP1 from '../../OTP1';
+import { Link } from 'react-router-dom'
 
 
 const useStyles = makeStyles((theme) => ({
@@ -36,20 +37,19 @@ const useStyles = makeStyles((theme) => ({
     {
       id: 2,
       label: 'Delivery address',
-      description:
-        'Select your delivery address from the existing one and add new one.',
+      description: 'Select your delivery address from the existing one and add new one.',
     },
     {
       id: 3,
       label: 'Payment',
-      description: `Select your payment method`,
+      description: `Cash on delivery`,
     },
   ];
   
   
 function CheckOut() {
     const classes = useStyles();
-    const [activeStep, setActiveStep] = React.useState(0);
+    const [activeStep, setActiveStep] = useState(0);
   
     const handleNext = () => {
       setActiveStep((prevActiveStep) => prevActiveStep + 1);
@@ -59,9 +59,9 @@ function CheckOut() {
       setActiveStep((prevActiveStep) => prevActiveStep - 1);
     };
   
-    const handleReset = () => {
-      setActiveStep(0);
-    };
+    // const handleReset = () => {
+    //   setActiveStep(0);
+    // };
     return (
         
             <div className="container">
@@ -71,7 +71,7 @@ function CheckOut() {
             <StepLabel
               optional={
                 index === 2 ? (
-                  <Typography variant="caption">Last step</Typography>
+                  <Typography variant="caption">Select your payment method</Typography>
                 ) : null
               }
             >
@@ -112,7 +112,7 @@ function CheckOut() {
                     onClick={handleNext}
                     className={classes.button}
                   >
-                    {index === steps.length - 1 ? 'Finish' : 'Continue'}
+                    {index === steps.length - 1 ? 'Order now' : 'Continue'}
                   </Button>
                   <Button
                     disabled={index === 0}
@@ -124,15 +124,17 @@ function CheckOut() {
                 </div>
               </div>
             </StepContent>
-          </Step>
+          </Step> 
         ))}
       </Stepper>
       {activeStep === steps.length && (
         <Paper square elevation={0} className={classes.resetContainer}>
-          <Typography>All steps completed - you&apos;re finished</Typography>
-          <Button onClick={handleReset} className={classes.button}>
-            Reset
-          </Button>
+          <Typography>All steps completed</Typography>
+          <Link to='/orderConfirmed' className="text-decoration-none">
+            <Button className="ms-4  px-5 py-2 bg-sandybrown color-royal-blue">
+              Place Order
+            </Button>
+          </Link>
         </Paper>
       )}
     </div>

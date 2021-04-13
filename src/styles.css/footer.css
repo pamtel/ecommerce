@@ -31,7 +31,7 @@
         text-align: center;
       }
       .second-footer {
-        margin-bottom: 6rem;
+        margin-bottom: 8rem;
       }
       .footer-info p {
           width: 5px;
@@ -54,7 +54,7 @@
           color: var(--darkgray);
       }
       .mobile-footer-icon .active {
-        color: var(--royal-blue);
+        background-color: var(--royal-blue);
       }
 
       .mobile-footer p{

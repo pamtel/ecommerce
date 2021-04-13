@@ -2,7 +2,9 @@ import React from 'react'
 import smiley from '../../../assests/img/smiley2.png'
 import Button from '@material-ui/core/Button';
 import { makeStyles } from '@material-ui/core/styles';
-import { Link } from 'react-router-dom'
+import { Link } from 'react-router-dom';
+import MobileFooter from '../../MobileFooter';
+import HeaderLayout from '../../_layout/HeaderLayout';
 
 const useStyles = makeStyles((theme) => ({
     button: {
@@ -13,6 +15,8 @@ const useStyles = makeStyles((theme) => ({
 function AngrySmiley() {
     return (
         <div>
+            <HeaderLayout>
+                <hr/>
             <div className="text-center py-5">
             <img src={smiley} alt="smiley" className="py-4"/>
             <div className="bag-content fontWeight">
@@ -30,6 +34,8 @@ function AngrySmiley() {
             </Link>
                 
             </div>
+            </HeaderLayout>
+            <MobileFooter />
         </div>
     )
 }

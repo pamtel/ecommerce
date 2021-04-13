@@ -29,7 +29,7 @@ function AccountRoot() {
 
           <div className="container border round my-4 py-4 pt-0 pb-0 account-root">
               <div className="row fontWeight ">
-                <div className="col-md-3 border py-4 details">
+                <div className="col-md-3 border-end py-4 details">
                     <div className="d-flex ps-3 color-royal-blue">
                         <SpeakerNotesOutlinedIcon />
                         <p className="ps-2">My order</p>
@@ -40,7 +40,7 @@ function AccountRoot() {
                     </div>
                 </div>
 
-                <div className="col-md-9 border py-4 all-orders">
+                <div className="col-md-9 py-4 ps-5 all-orders">
                     <div className="d-flex justify-content-between">
                         <p className="show">Showing all orders</p>
                         <Button 
