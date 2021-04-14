@@ -3,29 +3,29 @@ import LocalMallOutlinedIcon from "@material-ui/icons/LocalMallOutlined";
 import HomeOutlinedIcon from "@material-ui/icons/HomeOutlined";
 import ViewModuleOutlinedIcon from "@material-ui/icons/ViewModuleOutlined";
 import AssignmentOutlinedIcon from "@material-ui/icons/AssignmentOutlined";
-import { Link } from "react-router-dom";
+import { NavLink } from "react-router-dom";
   
 function MobileFooter() {
   return (
     <div className="mobile-footer d-sm-none">
       <hr />
       <div className="d-flex justify-content-between align-items-baseline px-3 text-center">
-        <Link to="/" className="text-decoration-none mobile-active">
+        <NavLink exact={true} activeClassName='is-active'  to="/" className="text-decoration-none mobile-active">
           <HomeOutlinedIcon className="mobile-footer-icon" />
           <p>Home</p>
-        </Link>
-        <Link to="/category" className="text-decoration-none">
+        </NavLink>
+        <NavLink activeClassName='is-active'  to="/category" className="text-decoration-none">
           <ViewModuleOutlinedIcon className="mobile-footer-icon" />
           <p>Categories</p>
-        </Link>
-        <Link to="/bag" className="text-decoration-none">
+        </NavLink>
+        <NavLink activeClassName='is-active'  to="/bag" className="text-decoration-none">
           <LocalMallOutlinedIcon className="mobile-footer-icon" />
           <p>Bag</p>
-        </Link>
-        <Link to="/orders" className="text-decoration-none">
+        </NavLink>
+        <NavLink activeClassName='is-active'  to="/orders" className="text-decoration-none">
           <AssignmentOutlinedIcon className="mobile-footer-icon" />
           <p>Orders</p>
-        </Link>
+        </NavLink>
       </div>
     </div>
   );

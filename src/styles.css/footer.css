@@ -53,10 +53,7 @@
           font-size: 3rem !important;
           color: var(--darkgray);
       }
-      .mobile-footer-icon .active {
-        background-color: var(--royal-blue);
-      }
-
+      
       .mobile-footer p{
         color: var(--darkgray);
       }
