@@ -1,16 +1,10 @@
 import React from 'react'
 import smiley from '../../../assests/img/smiley2.png'
 import Button from '@material-ui/core/Button';
-import { makeStyles } from '@material-ui/core/styles';
 import { Link } from 'react-router-dom';
 import MobileFooter from '../../MobileFooter';
 import HeaderLayout from '../../_layout/HeaderLayout';
 
-const useStyles = makeStyles((theme) => ({
-    button: {
-      margin: theme.spacing(1),
-    },
-  }));
 
 function AngrySmiley() {
     return (

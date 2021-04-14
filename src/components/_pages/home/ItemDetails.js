@@ -9,7 +9,7 @@ import { Link } from 'react-router-dom';
 import { ProductContext } from "../../ProductProvider";
 
 function ItemDetails() {
-    const [products, setProducts, input, setInput, onSearch, handleChange, cart, setCart, getTotalCart] = useContext(ProductContext);
+    const [, , , , , , cart, setCart, ] = useContext(ProductContext);
 
     const AddToBag = product => {
         let newCart = [...cart];

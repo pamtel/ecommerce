@@ -3,16 +3,9 @@ import AddSharpIcon from "@material-ui/icons/AddSharp";
 import { Link } from "react-router-dom";
 import Button from "@material-ui/core/Button";
 import { ProductContext } from "../components/ProductProvider";
-import { makeStyles } from "@material-ui/core/styles";
 
-const useStyles = makeStyles((theme) => ({
-  button: {
-    margin: theme.spacing(1),
-  },
-}));
 
 const GridView = () => {
-  const classes = useStyles();
   const [, , , , onSearch] = useContext(ProductContext);
   return (
     <div className="row">

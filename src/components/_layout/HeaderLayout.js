@@ -1,7 +1,7 @@
-import React, { Component } from 'react';
+import React from 'react';
 import GlobalHeader from '../GlobalHeader';
 
-export default ({children}) => (
+ const  HeaderLayout = ({children}) => (
     
           <React.Fragment>
               <GlobalHeader />
@@ -10,3 +10,4 @@ export default ({children}) => (
           </React.Fragment>
     
 )
+export default HeaderLayout

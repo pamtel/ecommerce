@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React from "react";
 import SearchIcon from "@material-ui/icons/Search";
 
 function Search({ handleChange, input }) {

@@ -1,8 +1,8 @@
-import React, { Component } from 'react';
+import React  from 'react';
 import GlobalHeader from '../GlobalHeader';
 import GlobalFooter from '../GlobalFooter';
 
-export default ({children}) => (
+ const MainLayout = ({children}) => (
     
           <React.Fragment>
               <GlobalHeader />
@@ -12,3 +12,4 @@ export default ({children}) => (
           </React.Fragment>
     
 )
+export default MainLayout

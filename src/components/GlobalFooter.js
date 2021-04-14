@@ -55,7 +55,7 @@ function GlobalFooter() {
           </Button>
         </div>
 
-        <Link className="d-flex justify-content-center mb-4 d-sm-none rounded-3 text-decoration-none">
+        <Link to="/category" className="d-flex justify-content-center mb-4 d-sm-none rounded-3 text-decoration-none">
           <Button
             variant="contained"
             className="bg-darkslategray text-white px-4 py-2 categories"
