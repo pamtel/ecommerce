@@ -1,3 +1,4 @@
+import React from 'react'
 import "./App.css";
 import "swiper/swiper.scss";
 import "swiper/components/navigation/navigation.scss";

@@ -21,7 +21,7 @@ function AddAddress() {
     return (
         <>
         <div className="d-flex justify-content-center add-address" onClick={handleClickOpen}>
-            <AddIcon  className="me-2"/>
+            <AddIcon  className="me-sm-2"/>
             <p>Add New Address</p>
         </div>
             <Dialog

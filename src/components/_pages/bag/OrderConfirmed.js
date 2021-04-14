@@ -20,7 +20,7 @@ function OrderConfirmed() {
                 <p className="color-darkgray pb-5">Order Number: John - 271e</p>
             </div>
 
-            <div className="d-flex justify-content-center">
+            <div className="d-flex justify-content-center mb-5">
                     <Button variant="outlined" className="me-4 border-royal-blue border-3 px-4  px-sm-5 py-2 color-royal-blue fontWeight">
                          Track Order
                     </Button>

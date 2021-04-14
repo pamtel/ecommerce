@@ -18,10 +18,3 @@
     width: 88px;
     margin-bottom: 2rem;
   }
-
-  @media(max-width: 767px){
-    /* .item-details {
-      display: flex;
-      justify-content: space-between !important;
-    } */
-  }
