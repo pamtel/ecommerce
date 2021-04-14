@@ -42,7 +42,6 @@ function ItemDetails() {
     }
 
     const singleItem = itemData.filter(i => i.id.toString() === ItemId)
-    console.log(singleItem);
     return (
         <MainLayout>
         <Link to="/" className="container d-flex text-decoration-none">

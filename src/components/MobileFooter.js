@@ -8,7 +8,7 @@ import { NavLink } from "react-router-dom";
 function MobileFooter() {
   return (
     <div className="mobile-footer d-sm-none">
-      <hr />
+      <hr className="m-0"/>
       <div className="d-flex justify-content-between align-items-baseline px-3 text-center">
         <NavLink exact={true} activeClassName='is-active'  to="/" className="text-decoration-none mobile-active">
           <HomeOutlinedIcon className="mobile-footer-icon" />

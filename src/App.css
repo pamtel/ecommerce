@@ -301,7 +301,13 @@ textarea {
 .is-active {
   border-top: 4px solid var(--royal-blue);
   color: var(--royal-blue) !important;  
+  margin-top: 0;
 }
+
+.is-active p, .is-active .mobile-footer-icon {
+  color: var(--royal-blue) !important;  
+}
+
 
 #desktop-category, #bag-sidebar, #deskstop-global-header, #desktop-itemlist {
   display: none;

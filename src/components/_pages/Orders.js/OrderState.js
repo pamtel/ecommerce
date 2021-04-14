@@ -58,7 +58,7 @@ function OrderState() {
             <div className="orderState container">
                 {orderData.map((status, index) => {
                     return (
-                        <div className="all-orders px-3 fontWeight color-darkgray">
+                        <div key={index} className="all-orders px-3 fontWeight color-darkgray">
                             <div className="d-flex justify-content-between">
                                 <h6 className="fontWeight color-darkslategray">{status.name}</h6>
                                 <p className="status">{status.time}</p>

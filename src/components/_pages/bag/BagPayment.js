@@ -30,7 +30,7 @@ function BagPayment() {
             <div className="d-flex justify-content-between my-4">
                 <div className="d-flex align-items-baseline bag-payment">
                     <p className="fontWeight bag-payment color-darkslategray">Bag</p>
-                    <button type="button" class="badge ms-2">0</button>
+                    <button type="button" className="badge ms-2">0</button>
                 </div>
                 
                 <div>
