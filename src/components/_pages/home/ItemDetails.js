@@ -77,7 +77,7 @@ function ItemDetails() {
                         </div>
                         
                     <div className="d-flex justify-content-between justify-content-sm-start items-detail">
-                        <Button onClick={ AddToBag } variant="outlined" className="me-4 border-royal-blue border-3 px-4 px-sm-5 py-2 color-royal-blue fontWeight">
+                        <Button onClick={ AddToBag } variant="outlined" className="me-4 border-royal-blue border-3 px-3 px-sm-5 py-2 color-royal-blue fontWeight">
                              Add to bag
                         </Button>
     

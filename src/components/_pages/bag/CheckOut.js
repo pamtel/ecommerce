@@ -59,12 +59,9 @@ function CheckOut() {
       setActiveStep((prevActiveStep) => prevActiveStep - 1);
     };
   
-    // const handleReset = () => {
-    //   setActiveStep(0);
-    // };
     return (
         
-            <div className="container">
+            <div className="">
             <Stepper activeStep={activeStep} orientation="vertical">
         {steps.map((step, index) => (
           <Step key={step.label}>

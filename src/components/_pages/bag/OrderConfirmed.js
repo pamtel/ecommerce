@@ -25,7 +25,7 @@ function OrderConfirmed() {
                          Track Order
                     </Button>
 
-                    <Link to='/category' className="text-decoration-none">
+                    <Link to='/' className="text-decoration-none">
                         <Button variant="contained" className="me-4 bg-sandybrown border-3 px-sm-5 py-2 color-royal-blue fontWeight">
                             Continue Shopping
                         </Button>

@@ -307,6 +307,9 @@ textarea {
 .is-active p, .is-active .mobile-footer-icon {
   color: var(--royal-blue) !important;  
 }
+.line-height{
+  line-height: 15px;
+}
 
 
 #desktop-category, #bag-sidebar, #deskstop-global-header, #desktop-itemlist {

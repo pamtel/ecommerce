@@ -52,7 +52,7 @@ const App = () => {
         <Route path="/angrySmiley">
           <AngrySmiley/>
         </Route>
-``
+
         <Route path="/orderConfirmed">
           <OrderConfirmed />
         </Route>
