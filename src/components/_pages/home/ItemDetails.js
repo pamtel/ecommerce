@@ -1,4 +1,4 @@
-import React, { useState, useContext } from 'react'
+import React, { useState } from 'react'
 import MainLayout from '../../_layout/MainLayout'
 import {  useParams } from 'react-router-dom'
 import {itemData} from '../../itemData'
@@ -6,15 +6,14 @@ import ArrowBackIosIcon from '@material-ui/icons/ArrowBackIos';
 import Button from '@material-ui/core/Button';
 import SliderOne from '../../SliderOne';
 import { Link } from 'react-router-dom';
-import { ProductContext } from "../../ProductProvider";
 
 
    // Our rules
-  const  AddToBag = (singleProduct) =>{
-    //   const {singleProduct} = props;
-      console.log(singleProduct)
-    // localStorage.setItem('cardProducts',  newItemString); 
-}
+//   const  AddToBag = (singleProduct) =>{
+//     //   const {singleProduct} = props;
+//       console.log(singleProduct)
+//     // localStorage.setItem('cardProducts',  newItemString); 
+// }
 
 
 
@@ -49,28 +48,6 @@ const addToLocalStorage = (product) =>{
   }
 
 function ItemDetails() {
-    const [, , , , , , cart, setCart, ] = useContext(ProductContext);
-
- 
-
-
-
-    // const AddToBag = (product) => {
-    //     let newCart = [...cart];
-    //     let itemInCart = newCart.find(item => product.id === item.id);
-    //     if (itemInCart) {
-    //         itemInCart.quantity++;
-    //     } else {
-    //         itemInCart = {
-    //             ...product,
-    //             quantity: 1
-    //         };
-    //         newCart.push(itemInCart)
-    //     }
-
-    //     setCart(newCart)
-    // }
-
     const { ItemId } = useParams()
     const [digit, setDigit] = useState(1);
 

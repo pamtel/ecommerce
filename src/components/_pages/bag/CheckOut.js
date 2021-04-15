@@ -104,7 +104,7 @@ function CheckOut() {
                     </div>
                   </div>
 
-                  <div className="col-md-5 border rounded py-4"> 
+                  <div className="col-md-5 border rounded py-4">
                     <div className="d-flex justify-content-center mt-4 color-royal-blue">
                       <AddAddress />
                     </div>
@@ -113,11 +113,7 @@ function CheckOut() {
               )}
               <div className={classes.actionsContainer}>
                 <div className="d-flex">
-                <div>
-                {step.id === 1 && (
-                  <OTP1 />
-                )}
-                </div>
+                  <div>{step.id === 1 && <OTP1 />}</div>
                   <Button
                     variant="contained"
                     onClick={handleNext}

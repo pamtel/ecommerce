@@ -18,10 +18,6 @@ const SliderOne = () => {
       spaceBetween={10}
       slidesPerView={7}
       navigation
-      //       pagination={{ clickable: true }}
-      // scrollbar={{ draggable: true }}
-      onSwiper={(swiper) => console.log(swiper)}
-      onSlideChange={() => console.log("slide change")}
     >
       <SwiperSlide>
         <img className="sliderone" src={product1} alt="product" />
