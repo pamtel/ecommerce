@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 
 function BagPayment() {
-  const [digit, setDigit] = useState(0);
+  const [digit, setDigit] = useState(1);
 
 
   const increaseDigit = () => {
