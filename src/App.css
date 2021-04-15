@@ -311,6 +311,10 @@ textarea {
   line-height: 20px;
 }
 
+.order {
+  margin-bottom: 2rem;
+}
+
 
 #desktop-category, #bag-sidebar, #deskstop-global-header, #desktop-itemlist {
   display: none;
@@ -330,7 +334,7 @@ textarea {
   }
 
   .dialog-content input, textarea {
-    width: 20rem;
+    width: 15rem;
     margin-left: 0;
   }
 }

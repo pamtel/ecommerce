@@ -11,7 +11,7 @@ import AccountRoot from "./components/_pages/account/AccountRoot";
 import ItemDetails from "./components/_pages/home/ItemDetails";
 import AccountAddress from "./components/_pages/account/AccountAddress";
 import CategoriesRoot from "./components/_pages/categories/CategoriesRoot";
-import OrdersRoot from "./components/_pages/Orders.js/OrdersRoot";
+import OrdersRoot from "./components/_pages/Orders/OrdersRoot";
 import SingleCategory from "./components/_pages/categories/SingleCategory";
 import ProductProvider from "./components/ProductProvider";
 import AngrySmiley from "./components/_pages/bag/AngrySmiley";
