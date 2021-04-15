@@ -1,6 +1,8 @@
 import React, { useState } from "react";
 
-function BagPayment() {
+function BagPayment(props) {
+  const {clearBag} = props;
+
   const [digit, setDigit] = useState(1);
 
 
@@ -14,6 +16,12 @@ function BagPayment() {
       setDigit(digit - 1);
     }
   };
+
+  const clearLocalStorage = () => {
+    clearBag()
+    localStorage.clear()
+    setDigit([])
+  }
 
   let cardProducts = localStorage.getItem("products");
   let itemArray = JSON.parse(cardProducts);
@@ -29,11 +37,12 @@ function BagPayment() {
         </div>
 
         <div>
-          <p className="text-decoration-underline fontWeight">Clear Bag</p>
+          <p className="text-decoration-underline fontWeight" onClick={clearLocalStorage} style={{cursor: "pointer"}}>Clear Bag</p>
         </div>
       </div>
 
-      {itemArray.map((i) => {
+
+      {itemArray && itemArray.map((i) => {
         return (
           <div key={i?.id} className="fontWeight">
             <div className="line-height">

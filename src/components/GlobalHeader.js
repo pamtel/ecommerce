@@ -1,22 +1,19 @@
-import React, { useContext } from "react";
+import React from "react";
 import LocalMallOutlinedIcon from "@material-ui/icons/LocalMallOutlined";
 import PersonOutlineOutlinedIcon from "@material-ui/icons/PersonOutlineOutlined";
 import { NavLink } from "react-router-dom";
 import logo from "../assests/img/logo2.png";
-import { ProductContext } from "../components/ProductProvider";
+import Badge from '@material-ui/core/Badge';
 
-function GlobalHeader() {
-  const [
-    ,
-    ,
-    ,
-    ,
-    ,
-    ,
-    ,
-    ,
-    getTotalCart,
-  ] = useContext(ProductContext);
+
+function GlobalHeader(props) {
+  const {bagCleared} = props;
+  
+  let cardProducts = localStorage.getItem("products");
+  let itemArray = JSON.parse(cardProducts);
+  if(bagCleared){
+    itemArray = []
+  }
   return (
     <>
       <div id="deskstop-global-header">
@@ -39,15 +36,19 @@ function GlobalHeader() {
                 </p>
               </div>
             </div>
-
+    
             <div className="d-flex align-items-center navLink">
               <NavLink
                 to="/bag"
                 className="d-flex align-items-center navLink-item"
               >
-                <LocalMallOutlinedIcon />
-                <p className="mb-0 ps-2 ">Bag{getTotalCart}</p>
+                
+                <Badge badgeContent={itemArray?.length > 0 ? itemArray?.length : 0} color="error">
+                  <LocalMallOutlinedIcon />
+                  <p className="mb-0 ps-2 ">Bag</p>
+                </Badge>
               </NavLink>
+              
 
               <NavLink
                 to="/account"

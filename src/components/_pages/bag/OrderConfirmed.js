@@ -9,7 +9,7 @@ function OrderConfirmed() {
   return (
     <>
       <HeaderLayout>
-        <div className="container text-center pt-3 pt-sm-5 fontWeight order">
+        <div className="container text-center pt-3 mb-5 pt-sm-5 fontWeight order">
           <div className="d-flex justify-content-center ms-5 ps-5 mb-3 mb-sm-5">
             <img src={confirm} alt="confirm" className="me-3" />
           </div>
@@ -29,7 +29,7 @@ function OrderConfirmed() {
           <Link to="/orders" className="text-decoration-none">
             <Button
               variant="outlined"
-              className="me-4 border-royal-blue border-3 px-4  px-sm-5 py-2 color-royal-blue fontWeight"
+              className="me-4 border-royal-blue border-3 px-sm-5 py-sm-2 mb-5 color-royal-blue fontWeight"
             >
               Track Order
             </Button>
@@ -38,7 +38,7 @@ function OrderConfirmed() {
             <Link to="/" className="text-decoration-none">
               <Button
                 variant="contained"
-                className="me-4 bg-sandybrown border-3 px-sm-5 py-2 color-royal-blue fontWeight"
+                className="me-4 bg-sandybrown border-3 px-sm-5 py-sm-2 mb-5 color-royal-blue fontWeight"
               >
                 Continue Shopping
               </Button>

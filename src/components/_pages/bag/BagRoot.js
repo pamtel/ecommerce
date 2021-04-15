@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState} from "react";
 import HeaderLayout from "../../_layout/HeaderLayout";
 import CheckOut from "./CheckOut";
 import BagPayment from "./BagPayment";
@@ -7,9 +7,14 @@ import { Link } from 'react-router-dom';
 import ArrowBackIosIcon from '@material-ui/icons/ArrowBackIos';
 
 function BagRoot() {
+  const [bagCleared, setBagCleared] = useState(false)
+  const clearBag = () => {
+    setBagCleared(true)
+    console.log("bag cleared");
+  }
   return (
     <>
-      <HeaderLayout>
+      <HeaderLayout bagCleared={bagCleared}>
       <Link to="/" className="container d-flex text-decoration-none me-3">
             <ArrowBackIosIcon className="color-darkslategray"/>
             <p className="ps-4 fontWeight color-darkslategray bag-payment">Bag</p>
@@ -24,12 +29,12 @@ function BagRoot() {
             <hr className="d-sm-none"/>
 
             <div className="col-md-4 ps-4">
-              <BagPayment />
+              <BagPayment clearBag={clearBag} bagCleared={bagCleared}/>
             </div>
           </div>
         </div>
       </HeaderLayout>
-      <MobileFooter />
+      <MobileFooter bagCleared={bagCleared} />
     </>
   );
 }

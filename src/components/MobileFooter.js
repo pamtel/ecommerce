@@ -4,8 +4,16 @@ import HomeOutlinedIcon from "@material-ui/icons/HomeOutlined";
 import ViewModuleOutlinedIcon from "@material-ui/icons/ViewModuleOutlined";
 import AssignmentOutlinedIcon from "@material-ui/icons/AssignmentOutlined";
 import { NavLink } from "react-router-dom";
+import Badge from '@material-ui/core/Badge';
   
-function MobileFooter() {
+function MobileFooter(props) {
+  const {bagCleared} = props;
+  console.log(props);
+  let cardProducts = localStorage.getItem("products");
+  let itemArray = JSON.parse(cardProducts);
+  if(bagCleared){
+    itemArray = []
+  }
   return (
     <div className="mobile-footer d-sm-none">
       <hr className="m-0"/>
@@ -19,7 +27,9 @@ function MobileFooter() {
           <p>Categories</p>
         </NavLink>
         <NavLink activeClassName='is-active'  to="/bag" className="text-decoration-none">
+        <Badge badgeContent={itemArray?.length > 0 ? itemArray?.length : 0} color="error">
           <LocalMallOutlinedIcon className="mobile-footer-icon" />
+          </Badge>
           <p>Bag</p>
         </NavLink>
         <NavLink activeClassName='is-active'  to="/orders" className="text-decoration-none">
