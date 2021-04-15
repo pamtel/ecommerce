@@ -47,7 +47,7 @@ function BagPayment() {
                   UGX {i?.outdated}
                 </sup>
               </div>
-              <div className="d-flex border-skyblue rounded pb-0 counter color-darkslategray">
+              <div className="d-flex border-skyblue rounded pb-0 counter color-darkslategray item-details">
                 <span
                   onClick={decreaseDigit}
                   className="px-2 color-skyblue bg-lavender fontWeight"
