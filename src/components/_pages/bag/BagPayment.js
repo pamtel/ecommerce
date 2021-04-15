@@ -1,19 +1,8 @@
 import React, { useState } from "react";
 
 function BagPayment() {
+  const [digit, setDigit] = useState(0);
 
-  const [count, setCount] = useState(0);
-  const [digit, setDigit] = useState(1);
-  const increaseCount = () => {
-    setCount(count + 1);
-  };
-  const decreaseCount = () => {
-    if (count <= 0) {
-      setCount(0);
-    } else {
-      setCount(count - 1);
-    }
-  };
 
   const increaseDigit = () => {
     setDigit(digit + 1);
@@ -26,10 +15,8 @@ function BagPayment() {
     }
   };
 
-    let cardProducts =  localStorage.getItem('products')
-    let itemArray = JSON.parse(cardProducts);
-
-  
+  let cardProducts = localStorage.getItem("products");
+  let itemArray = JSON.parse(cardProducts);
 
   return (
     <div className="B-payment">
@@ -37,7 +24,7 @@ function BagPayment() {
         <div className="d-flex align-items-baseline bag-payment">
           <p className="fontWeight bag-payment color-darkslategray">Bag</p>
           <button type="button" className="badge ms-2">
-          {itemArray?.length > 0 ? itemArray?.length : 0}
+            {itemArray?.length > 0 ? itemArray?.length : 0}
           </button>
         </div>
 
@@ -46,66 +33,39 @@ function BagPayment() {
         </div>
       </div>
 
-
-      {itemArray.map(i => {
-        return(
-      <div key={i?.id} className="fontWeight">
-      <div className="line-height">
-        <h6 className="color-darkslategray">{i?.title}</h6>
-        <p>Per piece</p>
-      </div>
-      <div className="d-flex  justify-content-between pb-4 pt-2">
-        <div className="line-height">
-          <p className="color-darkslategray">UGX {i?.price}</p>
-          <sup className="text-decoration-line-through">UGX {i?.outdated}</sup>
-        </div>
-        <div className="d-flex border-skyblue rounded pb-0 counter color-darkslategray">
-          <span
-            onClick={decreaseDigit}
-            className="px-2 color-skyblue bg-lavender fontWeight"
-          >
-            -
-          </span>
-          <span className="px-2 fontWeight">{digit}</span>
-          <span
-            onClick={increaseDigit}
-            className="px-2 color-skyblue bg-lavender fontWeight"
-          >
-            +
-          </span>
-        </div>
-      </div>
-    </div>
+      {itemArray.map((i) => {
+        return (
+          <div key={i?.id} className="fontWeight">
+            <div className="line-height">
+              <h6 className="color-darkslategray">{i?.title}</h6>
+              <p>Per piece</p>
+            </div>
+            <div className="d-flex  justify-content-between pb-4 pt-2">
+              <div className="line-height">
+                <p className="color-darkslategray">UGX {i?.price}</p>
+                <sup className="text-decoration-line-through">
+                  UGX {i?.outdated}
+                </sup>
+              </div>
+              <div className="d-flex border-skyblue rounded pb-0 counter color-darkslategray">
+                <span
+                  onClick={decreaseDigit}
+                  className="px-2 color-skyblue bg-lavender fontWeight"
+                >
+                  -
+                </span>
+                <span className="px-2 fontWeight">{digit}</span>
+                <span
+                  onClick={increaseDigit}
+                  className="px-2 color-skyblue bg-lavender fontWeight"
+                >
+                  +
+                </span>
+              </div>
+            </div>
+          </div>
         );
-})}
-
-      {/* <div className="fontWeight">
-        <div className="line-height">
-          <h6 className="color-darkslategray">Colorful Earrings Jhumki</h6>
-          <p>Per piece</p>
-        </div>
-        <div className="d-flex justify-content-between pb-3 pt-2">
-          <div className="line-height">
-            <p className="color-darkslategray">UGX 118,400</p>
-            <sup className="text-decoration-line-through">UGX 148,000</sup>
-          </div>
-          <div className="d-flex border-skyblue rounded pb-0 counter color-darkslategray">
-            <span
-              onClick={decreaseCount}
-              className="px-2 color-skyblue bg-lavender fontWeight"
-            >
-              -
-            </span>
-            <span className="px-2 fontWeight">{count}</span>
-            <span
-              onClick={increaseCount}
-              className="px-2 color-skyblue bg-lavender fontWeight"
-            >
-              +
-            </span>
-          </div>
-        </div>
-      </div> */}
+      })}
 
       <hr />
 

@@ -80,13 +80,12 @@ function CheckOut() {
                 <form className="form mt-3">
                   <span className="mb-2">Mobile Number</span>
                   <br></br>
-                  <div className="row">
+                  <div className="row ">
                     <input
                       type="text"
                       placeholder="+256    Enter mobile number"
                       className="input py-2 col-9"
                     />
-                    <OTP1 />
                   </div>
                 </form>
               )}
@@ -113,7 +112,12 @@ function CheckOut() {
                 </div>
               )}
               <div className={classes.actionsContainer}>
+                <div className="d-flex">
                 <div>
+                {step.id === 1 && (
+                  <OTP1 />
+                )}
+                </div>
                   <Button
                     variant="contained"
                     onClick={handleNext}

@@ -20,7 +20,7 @@ function OTP1() {
   };
     return (
         <div>
-            <Button variant="contained" className="mt-2 py-2 bg-sandybrown color-royal-blue" onClick={handleClickOpen}>
+            <Button variant="contained" className="mt-2 py-2 me-2 bg-sandybrown color-royal-blue" onClick={handleClickOpen}>
                 Login
             </Button>
 
