@@ -20,7 +20,7 @@ function OTP1() {
   };
     return (
         <div>
-            <Button variant="contained" className="ms-4  px-4 py-2 bg-sandybrown color-royal-blue" onClick={handleClickOpen}>
+            <Button variant="contained" className="mt-2 py-2 bg-sandybrown color-royal-blue" onClick={handleClickOpen}>
                 Login
             </Button>
 
@@ -41,8 +41,8 @@ function OTP1() {
             <hr className="mt-0"/>
             <DialogContent className="verify-content">
               <DialogContentText id="alert-dialog-description">
-                  <sup className="mx-5 mb-2 color-darkslategray fontWeight">Please enter verification code sent via SMS to +256 76 633 4574</sup><br/>
-                  <div className="d-flex mx-5">
+                  <sup className="mx-sm-5 mb-2 color-darkslategray fontWeight">Please enter verification code sent via SMS to +256 76 633 4574</sup><br/>
+                  <div className="d-flex mx-sm-5 me-5">
                   <input type="text" placeholder="0"/>
                   <input type="text" placeholder="0"/>
                   <input type="text" placeholder="0"/>

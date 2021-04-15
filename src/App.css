@@ -308,7 +308,7 @@ textarea {
   color: var(--royal-blue) !important;  
 }
 .line-height{
-  line-height: 15px;
+  line-height: 20px;
 }
 
 
@@ -327,6 +327,11 @@ textarea {
     width: 20rem;
     height: 3rem;
     padding-left: 8px;
+  }
+
+  .dialog-content input, textarea {
+    width: 20rem;
+    margin-left: 0;
   }
 }
 

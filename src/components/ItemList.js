@@ -5,6 +5,7 @@ import Search from "./Search";
 import { Link } from "react-router-dom";
 import Button from "@material-ui/core/Button";
 import AddSharpIcon from "@material-ui/icons/AddSharp";
+import SliderTwo from "./SliderTwo";
 
 const useStyles = makeStyles((theme) => ({
   button: {
@@ -20,6 +21,11 @@ function ItemList() {
     <>
       <div className="desktop-itemlist">
         <Search handleChange={handleChange} input={input} />
+
+        <div className="d-sm-none my-4">
+          <h6 className="color-darkgray">TOP CATEGORIES</h6>
+           <SliderTwo />
+        </div>
 
         <div className="d-sm-flex align-items-baseline categories color-darkgray d-none pt-3">
           <p>Electronics</p>

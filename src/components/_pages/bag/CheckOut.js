@@ -80,11 +80,11 @@ function CheckOut() {
                 <form className="form mt-3">
                   <span className="mb-2">Mobile Number</span>
                   <br></br>
-                  <div className="d-sm-flex align-items-center">
+                  <div className="row">
                     <input
                       type="text"
                       placeholder="+256    Enter mobile number"
-                      className="input py-2"
+                      className="input py-2 col-9"
                     />
                     <OTP1 />
                   </div>
@@ -105,7 +105,7 @@ function CheckOut() {
                     </div>
                   </div>
 
-                  <div className="col-md-5 border rounded py-4">
+                  <div className="col-md-5 border rounded py-4"> 
                     <div className="d-flex justify-content-center mt-4 color-royal-blue">
                       <AddAddress />
                     </div>

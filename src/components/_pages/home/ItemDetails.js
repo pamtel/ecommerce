@@ -8,24 +8,68 @@ import SliderOne from '../../SliderOne';
 import { Link } from 'react-router-dom';
 import { ProductContext } from "../../ProductProvider";
 
+
+   // Our rules
+  const  AddToBag = (singleProduct) =>{
+    //   const {singleProduct} = props;
+      console.log(singleProduct)
+    // localStorage.setItem('cardProducts',  newItemString); 
+}
+
+
+
+const addToLocalStorage = (product) =>{ 
+    let cardProducts =  localStorage.getItem('products')
+    if(cardProducts){
+      let itemArray = JSON.parse(cardProducts);
+      let itemExist =  itemArray.filter((item) => item.id === product.id);
+  
+    if(itemExist.length > 0){
+    //   this.snackBarShow('Product exists in cart');
+    alert('Exits...')
+    }else{
+      itemArray.push(product)
+      let newItemString = JSON.stringify(itemArray);
+      localStorage.setItem('products',  newItemString)
+    //   this.snackBarShow('Product added to cart');
+    alert('Product added again')
+    }
+  
+    }else{
+        // first time
+      let newItem = [product];
+      let newItemString = JSON.stringify(newItem);
+      localStorage.setItem('products',  newItemString);
+    //   this.snackBarShow('Product added to cart');
+    alert('Product added')
+    }
+  
+    // this.updateProductsCount();
+    // this.getProductsFromLocalStorage();
+  }
+
 function ItemDetails() {
     const [, , , , , , cart, setCart, ] = useContext(ProductContext);
 
-    const AddToBag = product => {
-        let newCart = [...cart];
-        let itemInCart = newCart.find(item => product.id === item.id);
-        if (itemInCart) {
-            itemInCart.quantity++;
-        } else {
-            itemInCart = {
-                ...product,
-                quantity: 1
-            };
-            newCart.push(itemInCart)
-        }
+ 
 
-        setCart(newCart)
-    }
+
+
+    // const AddToBag = (product) => {
+    //     let newCart = [...cart];
+    //     let itemInCart = newCart.find(item => product.id === item.id);
+    //     if (itemInCart) {
+    //         itemInCart.quantity++;
+    //     } else {
+    //         itemInCart = {
+    //             ...product,
+    //             quantity: 1
+    //         };
+    //         newCart.push(itemInCart)
+    //     }
+
+    //     setCart(newCart)
+    // }
 
     const { ItemId } = useParams()
     const [digit, setDigit] = useState(1);
@@ -77,7 +121,7 @@ function ItemDetails() {
                         </div>
                         
                     <div className="d-flex justify-content-between justify-content-sm-start items-detail">
-                        <Button onClick={ AddToBag } variant="outlined" className="me-4 border-royal-blue border-3 px-3 px-sm-5 py-2 color-royal-blue fontWeight">
+                        <Button onClick={ () => addToLocalStorage(data) } variant="outlined" className="me-4 border-royal-blue border-3 px-3 px-sm-5 py-2 color-royal-blue fontWeight">
                              Add to bag
                         </Button>
     
