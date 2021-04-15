@@ -84,7 +84,7 @@ function CheckOut() {
                     <input
                       type="text"
                       placeholder="+256    Enter mobile number"
-                      className="input py-2 col-9"
+                      className="input py-2 col-10"
                     />
                   </div>
                 </form>

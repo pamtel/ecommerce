@@ -6,7 +6,7 @@ import ArrowBackIosIcon from '@material-ui/icons/ArrowBackIos';
 import Button from '@material-ui/core/Button';
 import SliderOne from '../../SliderOne';
 import { Link } from 'react-router-dom';
-
+// import Snackbar from '@material-ui/core/Snackbar';
 
    // Our rules
 //   const  AddToBag = (singleProduct) =>{
@@ -98,9 +98,11 @@ function ItemDetails() {
                         </div>
                         
                     <div className="d-flex justify-content-between justify-content-sm-start items-detail">
+                    <Link to='/bag' className="text-decoration-none">
                         <Button onClick={ () => addToLocalStorage(data) } variant="outlined" className="me-4 border-royal-blue border-3 px-3 px-sm-5 py-2 color-royal-blue fontWeight">
                              Add to bag
                         </Button>
+                    </Link>
     
                         <Link to='/bag' className="text-decoration-none">
                             <Button variant="contained" className="me-4 bg-sandybrown border-3 px-5  py-2 color-royal-blue fontWeight">

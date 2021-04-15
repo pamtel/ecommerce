@@ -10,7 +10,7 @@ function OrderConfirmed() {
     <>
       <HeaderLayout>
         <div className="container text-center pt-3 pt-sm-5 fontWeight order">
-          <div className="d-flex justify-content-center ms-5 ps-5 mb-5">
+          <div className="d-flex justify-content-center ms-5 ps-5 mb-3 mb-sm-5">
             <img src={confirm} alt="confirm" className="me-3" />
           </div>
           <div className="line-height">
@@ -18,7 +18,7 @@ function OrderConfirmed() {
             <p className="bag-payment pb-2 color-darkslategray">
               Your order has been placed sucessfully
             </p>
-            <p className="color-darkgray pb-4">
+            <p className="color-darkgray pb-3 pb-sm-4">
               You will recieve a confirmation message as soon as the order is
               accepted
             </p>

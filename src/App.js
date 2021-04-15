@@ -1,4 +1,4 @@
-import React from 'react'
+import React from "react";
 import "./App.css";
 import "swiper/swiper.scss";
 import "swiper/components/navigation/navigation.scss";
@@ -51,7 +51,7 @@ const App = () => {
         </Route>
 
         <Route path="/angrySmiley">
-          <AngrySmiley/>
+          <AngrySmiley />
         </Route>
 
         <Route path="/orderConfirmed">
