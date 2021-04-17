@@ -74,7 +74,7 @@ function ItemDetails() {
         {singleItem.map((data, index) => {
           return (
             <div key={index} className="row">
-              <img src={data.image} alt="product" className="col-sm-5" />
+              <img src={data.image} alt="product" className="col-sm-5 img-fluid" />
               <div className="pt-3 ps-4 col-sm-7">
                 <div className="mb-4">
                   <h6 className="color-darkslategray fontWeight pb-2">

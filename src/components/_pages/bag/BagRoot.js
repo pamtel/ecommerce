@@ -15,7 +15,7 @@ function BagRoot() {
   return (
     <>
       <HeaderLayout bagCleared={bagCleared}>
-      <Link to="/" className="container d-flex text-decoration-none me-3">
+      <Link to="/" className="container d-flex text-decoration-none ms-3 ms-sm-5">
             <ArrowBackIosIcon className="color-darkslategray"/>
             <p className="ps-4 fontWeight color-darkslategray bag-payment">Bag</p>
         </Link>
